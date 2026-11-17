@@ -662,8 +662,6 @@ html.no-js .site-nav { order: 3; flex-basis: 100%; padding-bottom: 24px; }
 }
 
 .page-title__visual .ui-card {
-  border-bottom: 0;
-  border-radius: 22px 22px 0 0;
   box-shadow: var(--shadow-rise);
   padding: 22px;
 }
@@ -676,12 +674,10 @@ html.no-js .site-nav { order: 3; flex-basis: 100%; padding-bottom: 24px; }
 
   .page-title--solution {
     grid-template-columns: 1fr 440px;
-    padding: 56px 56px 0;
+    padding: 56px;
   }
 
-  .page-title--solution .page-title__content {
-    padding-bottom: 56px;
-  }
+  .page-title--solution .page-title__visual { align-self: end; }
 }
 
 /* ==========================================================================

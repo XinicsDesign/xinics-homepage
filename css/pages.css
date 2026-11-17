@@ -2025,3 +2025,131 @@ html.js [data-inview]:not(.is-inview).mon .mon__bars i { transform: scaleY(0); }
   .tkt.is-inview *, .tkt.is-inview *::after,
   .mon.is-inview *, .mon.is-inview *::before { animation: none !important; }
 }
+
+/* ==========================================================================
+   Solutions 제품 — 대표 제품 패널 + 제품 목록(한 줄씩)
+   ========================================================================== */
+.p-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--area-color) 12%, var(--bg));
+  color: var(--area-dark);
+  font-family: var(--font-en);
+  font-size: .8125rem;
+  font-weight: 700;
+}
+
+.p-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.p-tags li {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--bg-2);
+  color: var(--ink-2);
+  font-size: .8125rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* 대표 제품 */
+.pfeats {
+  display: grid;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.pfeat {
+  display: grid;
+  gap: 32px;
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: var(--r-lg);
+  background: var(--bg-2);
+}
+
+.pfeat[id] { scroll-margin-top: calc(var(--header-h) + 24px); }
+
+.pfeat__top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pfeat__name {
+  margin-top: 20px;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.pfeat__desc {
+  margin-top: 12px;
+  max-width: 30em;
+  color: var(--sub);
+  font-size: var(--fs-lead);
+  line-height: 1.7;
+}
+
+.pfeat .p-tags { margin-top: 24px; }
+.pfeat .p-tags li { background: var(--bg); box-shadow: inset 0 0 0 1px var(--line-2); }
+
+.pfeat__visual { margin: 0; align-self: center; }
+.pfeat__visual .ui-card { width: min(100%, 460px); margin-inline: auto; }
+
+@media (min-width: 900px) {
+  .pfeat { grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+}
+
+/* 제품 목록 */
+.prows {
+  margin-top: 40px;
+  border-top: 1px solid var(--line-2);
+}
+
+.pfeats + .prows { margin-top: 24px; }
+
+.prow {
+  display: grid;
+  gap: 12px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.prow[id] { scroll-margin-top: calc(var(--header-h) + 24px); }
+
+.prow__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.prow__head > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.prow__name {
+  font-size: 1.25rem;
+  letter-spacing: -.02em;
+}
+
+.prow__desc {
+  color: var(--sub);
+  line-height: 1.65;
+}
+
+@media (min-width: 1024px) {
+  .prow {
+    grid-template-columns: 4fr 5fr 5fr;
+    align-items: center;
+    gap: 32px;
+    padding: 28px 0;
+  }
+}

@@ -103,44 +103,37 @@
         <h2 id="products-title">운영 단계의 제품</h2>
         <p>필요한 것만 골라 쓰고, 함께 쓰면 데이터가 이어집니다.</p>
       </header>
-      <div class="product-grid">
-        <article class="product-card product-card--wide" id="product-ai-campus" data-area="campus">
-          <div>
-            <div class="product-card__top"><span class="product-card__icon" aria-hidden="true">AC</span><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div>
-            <h3>AI Campus</h3>
-            <p class="product-card__desc">대학의 시스템과 지식을 연결해 학사·행정 업무와 학생 문의를 돕는 AI.</p>
-            <ul class="product-card__features" role="list"><li>학칙·학사·부서 문서 기반</li><li>자연어 질의응답 (RAG)</li><li>근거 조항 표시</li></ul>
+      <div class="pfeats">
+        <article class="pfeat" id="product-ai-campus" data-area="campus">
+          <div class="pfeat__body">
+            <div class="pfeat__top"><span class="p-icon" aria-hidden="true">AC</span><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div>
+            <h3 class="pfeat__name">AI Campus</h3>
+            <p class="pfeat__desc">대학의 시스템과 지식을 연결해 학사·행정 업무와 학생 문의를 돕는 AI.</p>
+            <ul class="p-tags" role="list"><li>학칙·학사·부서 문서 기반</li><li>자연어 질의응답 (RAG)</li><li>근거 조항 표시</li></ul>
           </div>
-          <figure role="img" aria-label="AI Campus 예시: 장학금 질문에 근거 조항과 함께 답합니다."><div aria-hidden="true"><div class="ui-card ui-ask">
+          <figure class="pfeat__visual" role="img" aria-label="AI Campus 예시: 장학금 질문에 근거 조항과 함께 답합니다."><div aria-hidden="true"><div class="ui-card ui-ask">
             <div class="ui-card__head"><span class="dot dot--campus"></span>AI Campus</div>
             <div class="ui-ask__q">휴학 중에도 장학금 신청이 가능한가요?</div>
             <p class="ui-ask__a">휴학생은 교내 장학금 대상에서 제외됩니다. 복학 예정 학기 장학금은 복학 신청 후 신청할 수 있습니다.</p>
             <div class="ui-pills" style="margin-top:12px"><span>학칙 제42조</span><span>장학금 지급 규정 제7조</span></div>
           </div></div></figure>
         </article>
-        <article class="product-card" id="product-extracurricular" data-area="campus">
-          <div>
-            <div class="product-card__top"><span class="product-card__icon" aria-hidden="true">비</span><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li></ul></div>
-            <h3>비교과/역량 시스템</h3>
-            <p class="product-card__desc">비교과 프로그램 운영과 역량 관리, 학생 상담을 하나로 잇는 시스템.</p>
-            <ul class="product-card__features" role="list"><li>비교과 프로그램 개설·운영</li><li>역량·마일리지 관리</li><li>상담 신청·기록</li></ul>
-          </div>
+      </div>
+      <div class="prows">
+        <article class="prow" id="product-extracurricular" data-area="campus">
+          <div class="prow__head"><span class="p-icon" aria-hidden="true">비</span><div><h3 class="prow__name">비교과/역량 시스템</h3><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li></ul></div></div>
+          <p class="prow__desc">비교과 프로그램 운영과 역량 관리, 학생 상담을 하나로 잇는 시스템.</p>
+          <ul class="p-tags" role="list"><li>비교과 프로그램 개설·운영</li><li>역량·마일리지 관리</li><li>상담 신청·기록</li></ul>
         </article>
-        <article class="product-card pc-lg-half" id="product-learningx-ai-platform" data-area="campus">
-          <div>
-            <div class="product-card__top"><span class="product-card__icon" aria-hidden="true">AP</span><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div>
-            <h3>LearningX AI 플랫폼</h3>
-            <p class="product-card__desc">모든 AI 서비스의 공통 기반.</p>
-            <ul class="product-card__features" role="list"><li>모델 관리</li><li>권한·활성화 단위 통제</li><li>사용량·감사 로그, AI 투명성 고지</li></ul>
-          </div>
+        <article class="prow" id="product-learningx-ai-platform" data-area="campus">
+          <div class="prow__head"><span class="p-icon" aria-hidden="true">AP</span><div><h3 class="prow__name">LearningX AI 플랫폼</h3><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div></div>
+          <p class="prow__desc">모든 AI 서비스의 공통 기반.</p>
+          <ul class="p-tags" role="list"><li>모델 관리</li><li>권한·활성화 단위 통제</li><li>사용량·감사 로그, AI 투명성 고지</li></ul>
         </article>
-        <article class="product-card pc-lg-half pc-md-full" id="product-instructor-ai-dashboard" data-area="campus">
-          <div>
-            <div class="product-card__top"><span class="product-card__icon" aria-hidden="true">DB</span><ul class="badges" role="list"><li class="badge badge--pilot">시범운영</li><li class="badge badge--ai">AI</li></ul></div>
-            <h3>교수자 AI 대시보드</h3>
-            <p class="product-card__desc">학습 현황·관심 학생 후보군·학습 취약 영역 인사이트.</p>
-            <ul class="product-card__features" role="list"><li>학습 현황</li><li>관심 학생 후보군</li><li>학습 취약 영역 인사이트</li></ul>
-          </div>
+        <article class="prow" id="product-instructor-ai-dashboard" data-area="campus">
+          <div class="prow__head"><span class="p-icon" aria-hidden="true">DB</span><div><h3 class="prow__name">교수자 AI 대시보드</h3><ul class="badges" role="list"><li class="badge badge--pilot">시범운영</li><li class="badge badge--ai">AI</li></ul></div></div>
+          <p class="prow__desc">학습 현황·관심 학생 후보군·학습 취약 영역 인사이트.</p>
+          <ul class="p-tags" role="list"><li>학습 현황</li><li>관심 학생 후보군</li><li>학습 취약 영역 인사이트</li></ul>
         </article>
       </div>
       <p class="example-note example-note--right">화면은 이해를 돕기 위한 예시입니다.</p>
