@@ -179,6 +179,11 @@ h3 { font-size: var(--fs-h3); }
   padding-top: var(--section-y);
 }
 
+/* 서브페이지 타이틀 블록 바로 다음 섹션은 간격을 줄인다 */
+.page-title-wrap + .section {
+  padding-top: clamp(48px, 5vw, 72px);
+}
+
 /* 페이지 마지막 섹션 아래 여백 (CTA 블록이 없는 페이지) */
 .section--end {
   padding-bottom: var(--section-y);
