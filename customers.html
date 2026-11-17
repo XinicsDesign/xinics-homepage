@@ -79,16 +79,27 @@
       <div class="page-title__content">
         <p class="page-title__loc">고객</p>
         <h1 id="page-title">Xinics와 함께한 대학, 기관</h1>
-        <p class="page-title__stat stat-num"><span class="sr-only">400곳 이상</span><span aria-hidden="true">400+<span class="stat-num__unit">곳</span></span></p>
+        <p class="page-title__lead">400여 대학·기관이 Xinics와 함께하고 있습니다.</p>
       </div>
     </section>
   </div>
 
-  <section class="section" aria-label="고객사 로고">
+  <section class="section" aria-labelledby="cust-sum-title">
     <div class="container">
-      <div class="logo-group">
-        <h2>대학</h2>
-        <ul class="logo-grid" role="list">
+      <div class="cust-sum">
+        <dl class="cust-sum__stat">
+          <dt id="cust-sum-title">함께한 대학·기관</dt>
+          <dd class="stat-num" data-countup="400"><span class="sr-only">400곳 이상</span><span aria-hidden="true"><span data-countup-value>400</span>+<span class="stat-num__unit">곳</span></span></dd>
+        </dl>
+        <p class="cust-sum__text">대학과 교육대학, 원격교육지원센터, 공유대학 사업단, 공공기관까지. 아래 로고는 그중 일부입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="uni-title">
+    <div class="container">
+      <header class="logo-head"><p class="eyebrow" lang="en">Universities</p><h2 id="uni-title">대학</h2></header>
+      <ul class="logo-grid" role="list">
           <li><img class="logo-img" src="assets/logos/customers/catholic.webp" alt="가톨릭대학교" width="155" height="40" loading="lazy"></li>
           <li><img class="logo-img" src="assets/logos/customers/knu.webp" alt="경북대학교" width="138" height="40" loading="lazy"></li>
           <li><img class="logo-img" src="assets/logos/customers/kyungsung.webp" alt="경성대학교" width="119" height="40" loading="lazy"></li>
@@ -145,11 +156,14 @@
           <li><img class="logo-img" src="assets/logos/customers/hanseo.webp" alt="한서대학교" width="137" height="40" loading="lazy"></li>
           <li><img class="logo-img" src="assets/logos/customers/hanyang.webp" alt="한양대학교" width="121" height="40" loading="lazy"></li>
           <li><img class="logo-img" src="assets/logos/customers/chungbuk.webp" alt="충북대학교" width="115" height="40" loading="lazy"></li>
-        </ul>
-      </div>
-      <div class="logo-group">
-        <h2>기관·센터</h2>
-        <ul class="logo-grid" role="list">
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="org-title">
+    <div class="container">
+      <header class="logo-head"><p class="eyebrow" lang="en">Institutions</p><h2 id="org-title">기관·센터</h2></header>
+      <ul class="logo-grid" role="list">
           <li><img class="logo-img" src="assets/logos/customers/pss.webp" alt="대통령경호처" width="128" height="40" loading="lazy"></li>
           <li><img class="logo-img" src="assets/logos/customers/udec-capital.webp" alt="수도권 대학원격교육지원센터" width="138" height="40" loading="lazy"></li>
           <li><img class="logo-img" src="assets/logos/customers/udec-ulsan-gyeongnam.webp" alt="울산·경남 대학원격교육지원센터" width="148" height="40" loading="lazy"></li>
@@ -160,8 +174,24 @@
           <li><img class="logo-img" src="assets/logos/customers/cnai.webp" alt="항공드론혁신융합대학" width="103" height="40" loading="lazy"></li>
           <li><img class="logo-img" src="assets/logos/customers/biopride.webp" alt="충북바이오헬스산업혁신센터" width="131" height="40" loading="lazy"></li>
           <li><img class="logo-img" src="assets/logos/customers/usg.webp" alt="USG 공유대학 2.0" width="206" height="40" loading="lazy"></li>
-        </ul>
-      </div>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--end" aria-label="더 알아보기">
+    <div class="container about-next">
+      <a class="next-step next-step--brand" href="services.html">
+        <span class="next-step__blob" aria-hidden="true"></span>
+        <span class="next-step__label" lang="en">Services</span>
+        <span class="next-step__title">소프트웨어 너머의 서비스</span>
+        <span class="next-step__arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="next-step next-step--ink" href="company/about.html">
+        <span class="next-step__blob" aria-hidden="true"></span>
+        <span class="next-step__label" lang="en">About</span>
+        <span class="next-step__title">회사 소개</span>
+        <span class="next-step__arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
     </div>
   </section>
 </main>

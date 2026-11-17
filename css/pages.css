@@ -591,8 +591,38 @@
 }
 
 /* Customers */
-.logo-group + .logo-group { margin-top: 64px; }
-.logo-group h2 { margin-bottom: 20px; font-size: var(--fs-h3); }
+/* Customers */
+.cust-sum {
+  display: grid;
+  gap: 20px 64px;
+  align-items: end;
+  padding-bottom: clamp(32px, 4vw, 48px);
+  border-bottom: 1px solid var(--line-2);
+}
+
+.cust-sum__stat {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4px;
+}
+
+.cust-sum__stat dt { color: var(--sub); font-weight: 600; }
+.cust-sum__stat dd { font-size: clamp(4rem, 9vw, 7rem); line-height: 1; }
+
+.cust-sum__text {
+  max-width: 28em;
+  color: var(--ink-2);
+  font-size: var(--fs-lead);
+  line-height: 1.7;
+}
+
+@media (min-width: 900px) {
+  .cust-sum { grid-template-columns: auto 1fr; }
+  .cust-sum__text { justify-self: end; padding-bottom: 12px; }
+}
+
+.logo-head { margin-bottom: 28px; }
+.logo-head h2 { margin-top: 12px; font-size: clamp(1.75rem, 3vw, 2.25rem); }
 
 .page-title__stat {
   margin-top: 18px;
