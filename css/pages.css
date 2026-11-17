@@ -2342,15 +2342,14 @@ html.js .spot__stage:not(.is-inview) .ui-card { opacity: 0; transform: translate
   .srv__note { grid-column: 2; margin-top: -40px; }
 }
 
-/* 예시 안내문 — 그림의 일부(장식), 흰 글씨로 은은하게. 그림 설명(aria-label)에 "예시"가 이미 들어 있음 */
+/* 예시 안내문 — 그림의 일부(장식), 다른 페이지와 같은 회색. 그림 설명(aria-label)에 "예시"가 이미 들어 있음 */
 .spot__note {
   position: absolute;
   right: 24px;
   bottom: 18px;
   z-index: 1;
-  color: var(--bg);
+  color: var(--mute);
   font-size: .75rem;
-  font-weight: 500;
 }
 
 @media (max-width: 959.98px) {
