@@ -2335,4 +2335,37 @@ html.js .spot__stage:not(.is-inview) .ui-card { opacity: 0; transform: translate
   .ptiles--2 { grid-template-columns: 1fr 1fr; }
 }
 
-.srv-list > .example-note { margin-top: -8px; }
+
+/* 예시 안내문 — Services 는 예시 카드 아래, 솔루션은 예시 패널 오른쪽 아래 모서리 */
+.srv__note { margin-top: -16px; }
+@media (min-width: 960px) {
+  .srv__note { grid-column: 2; margin-top: -40px; }
+}
+
+/* 예시 안내문 — 그림의 일부(장식), 흰 글씨로 은은하게. 그림 설명(aria-label)에 "예시"가 이미 들어 있음 */
+.spot__note {
+  position: absolute;
+  right: 24px;
+  bottom: 18px;
+  z-index: 1;
+  color: var(--bg);
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+@media (max-width: 959.98px) {
+  .spot__note {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    justify-self: end;
+    margin-top: 16px;
+  }
+  .spot__visual { padding-bottom: clamp(20px, 4vw, 32px); }
+}
+.spot__visual { padding-bottom: calc(clamp(28px, 4vw, 56px) + 24px); }
+
+/* 그림 패널 안 카드가 패널보다 넓어지지 않게 */
+.spot__visual { grid-template-columns: minmax(0, 1fr); }
+.spot__stage { min-width: 0; justify-self: center; }
+.ui-wave--light { overflow: hidden; }
