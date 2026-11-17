@@ -2153,3 +2153,67 @@ html.js [data-inview]:not(.is-inview).mon .mon__bars i { transform: scaleY(0); }
     padding: 28px 0;
   }
 }
+
+/* Solutions — 쓰이는 장면 (벤토) */
+.scenes { margin-top: 40px; }
+
+.ui-rec__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--campus-d);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--campus) 25%, transparent);
+}
+
+.ui-rec .ui-slide--video { margin-top: 10px; }
+
+.ui-rec__flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  color: var(--sub);
+}
+
+.ui-rec__flow span {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-2);
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+.ui-rec__flow span:last-child { background: var(--brand-soft); color: var(--teach-d); }
+.ui-rec__flow i { font-style: normal; }
+
+.ui-lib__row {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+}
+
+.ui-lib__row b { color: var(--teach-d); font-size: .75rem; }
+.ui-lib__row em {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--teach-d);
+  font-size: .6875rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.ui-approve {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  color: var(--sub);
+}
+
+.ui-approve b { color: var(--learn-d); }
