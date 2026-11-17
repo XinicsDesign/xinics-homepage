@@ -1,0 +1,9 @@
+.playwright-mcp/
+__pycache__/
+.DS_Store
+Thumbs.db
+assets/fonts/_source/
+_dev/
+assets/fonts/*/
+*.txt
+!robots.txt

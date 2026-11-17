@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /scripts/
+Disallow: /partials/
+
+Sitemap: https://home.xinics.com/sitemap.xml

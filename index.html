@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- no-js → js. main.js 가 3초 안에 실행되지 않으면 no-js 로 되돌려 콘텐츠를 최종 상태로 표시 -->
+  <script>(function(d){d.className=d.className.replace(/\bno-js\b/,'js');setTimeout(function(){if(!window.XN_READY)d.className=d.className.replace(/\bjs\b/,'no-js')},3000)})(document.documentElement)</script>
+  <title>Xinics | 교육의 모든 과정을 AI로 연결합니다</title>
+  <meta name="description" content="강의 설계부터 학습, 평가, 캠퍼스 운영까지. 400여 대학과 기관이 Xinics 하나로 수업을 운영합니다.">
+  <!-- TODO: 도메인(home.xinics.com) 적용 시 canonical·og:url·og:image 절대 URL로 변경 -->
+  <link rel="canonical" href="/">
+  <meta property="og:url" content="/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Xinics">
+  <meta property="og:title" content="Xinics | 교육의 모든 과정을 AI로 연결합니다">
+  <meta property="og:description" content="강의 설계부터 학습, 평가, 캠퍼스 운영까지. 400여 대학과 기관이 Xinics 하나로 수업을 운영합니다.">
+  <meta property="og:image" content="/assets/images/og-default.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="assets/fonts/Pretendard-Bold.subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/tabs.js" defer></script>
+  <script src="js/flow-canvas.js" defer></script>
+</head>
+<body class="page--dark-hero">
+<!-- HEADER:START -->
+<a class="skip" href="#main">본문 바로가기</a>
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="site-logo" href="./" aria-current="page">
+      <img class="site-logo__img" src="./assets/logos/xinics.svg" alt="Xinics 홈" width="101" height="28">
+      <img class="site-logo__img site-logo__img--white" src="./assets/logos/xinics-white.svg" alt="" width="101" height="28">
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="주 메뉴">
+      <ul class="nav-list" role="list">
+        <li class="nav-item has-sub">
+          <button class="nav-link nav-link--parent" type="button" aria-expanded="false" aria-controls="nav-sub-solutions" data-sub-toggle>Solutions</button>
+          <ul class="nav-sub" id="nav-sub-solutions" role="list">
+            <li><a class="nav-sub__link" href="./solutions/teach.html"><span class="dot dot--teach" aria-hidden="true"></span><span class="nav-sub__name">Teach</span><span class="nav-sub__desc">수업 설계·콘텐츠 제작</span></a></li>
+            <li><a class="nav-sub__link" href="./solutions/learn.html"><span class="dot dot--learn" aria-hidden="true"></span><span class="nav-sub__name">Learn</span><span class="nav-sub__desc">학습 경험</span></a></li>
+            <li><a class="nav-sub__link" href="./solutions/assess.html"><span class="dot dot--assess" aria-hidden="true"></span><span class="nav-sub__name">Assess</span><span class="nav-sub__desc">평가</span></a></li>
+            <li><a class="nav-sub__link" href="./solutions/campus.html"><span class="dot dot--campus" aria-hidden="true"></span><span class="nav-sub__name">Campus</span><span class="nav-sub__desc">운영·분석</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="./customers.html">Customers</a></li>
+        <li class="nav-item has-sub">
+          <button class="nav-link nav-link--parent" type="button" aria-expanded="false" aria-controls="nav-sub-company" data-sub-toggle>Company</button>
+          <ul class="nav-sub" id="nav-sub-company" role="list">
+            <li><a class="nav-sub__link" href="./company/about.html"><span class="nav-sub__name">About</span><span class="nav-sub__desc">회사 소개·조직</span></a></li>
+            <li><a class="nav-sub__link" href="./company/culture.html"><span class="nav-sub__name">Culture</span><span class="nav-sub__desc">일하는 방식·복지</span></a></li>
+            <li><a class="nav-sub__link" href="./company/recruit.html"><span class="nav-sub__name">Recruit</span><span class="nav-sub__desc">채용 안내·FAQ</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+      </ul>
+      <!-- 모바일 메뉴 패널 하단 연락처 -->
+      <p class="site-nav__foot">
+        <a href="tel:+8228658801">02-865-8801</a>
+        <a href="mailto:contact@xinics.com">contact@xinics.com</a>
+      </p>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="sr-only" data-nav-toggle-label>메뉴 열기</span>
+    </button>
+  </div>
+</header>
+<!-- HEADER:END -->
+
+<main id="main" tabindex="-1">
+  <!-- 1. Hero (A · 다크) -->
+  <section class="hero-a on-dark" data-hero data-pausable aria-labelledby="home-title">
+    <canvas class="hero-a__canvas" data-flow="hero" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="hero-a__in">
+        <div>
+          <p class="hero-a__pill" data-enter style="--i:0"><b lang="en">New</b>XN Quiz · GradeFlow 시범운영 시작</p>
+          <h1 id="home-title" data-enter style="--i:1">교육의 모든 과정을<br><span class="hero-a__glow">AI로 연결합니다</span></h1>
+          <p class="hero-a__lead" data-enter style="--i:2">강의 설계부터 학습, 평가, 캠퍼스 운영까지. 400여 대학과 기관이 Xinics 하나로 수업을 운영합니다.</p>
+          <ul class="hero-a__areas" role="list" aria-label="하는 일" data-enter style="--i:3">
+            <li><span class="dot dot--teach" aria-hidden="true"></span>설계·제작</li>
+            <li><span class="dot dot--learn" aria-hidden="true"></span>학습</li>
+            <li><span class="dot dot--assess" aria-hidden="true"></span>평가</li>
+            <li><span class="dot dot--campus" aria-hidden="true"></span>운영·분석</li>
+          </ul>
+        </div>
+        <figure class="hero-panel" data-enter style="--i:4" data-loop role="img" aria-label="AI Tutor 예시: 학생이 스택과 큐의 차이를 묻자, 강의자료 12쪽과 강의 영상 14분 32초를 근거로 답변합니다.">
+          <div class="hero-panel__in" aria-hidden="true">
+            <div class="hero-panel__head"><span class="hero-panel__icon"></span><b>AI Tutor</b>데이터구조 · 3주차<small>● 응답 중</small></div>
+            <div class="hero-panel__q">스택이랑 큐 차이를 실생활 예시로 설명해 줄래?</div>
+            <div class="hero-panel__a"><span data-typing>스택은 접시 쌓기처럼 마지막에 올린 걸 먼저 꺼내요. 큐는 매점 줄처럼 먼저 온 사람이 먼저 나가요.</span><div class="ui-cite"><span>3주차 강의자료 p.12</span><span>강의 영상 14:32</span></div></div>
+            <div class="hero-panel__input">강의 내용에 대해 질문하세요<span>↵</span></div>
+          </div>
+        </figure>
+      </div>
+
+      <h2 class="sr-only">숫자로 보는 Xinics</h2>
+      <dl class="hero-stats">
+        <div class="hero-stats__item" data-area="teach">
+          <dt>도입 대학·기관</dt>
+          <dd class="stat-num" data-countup="400"><span class="sr-only">400곳 이상</span><span aria-hidden="true"><span data-countup-value>400</span>+<span class="stat-num__unit">곳</span></span></dd>
+        </div>
+        <div class="hero-stats__item" data-area="learn">
+          <dt>사용자</dt>
+          <dd class="stat-num" data-countup="1" data-decimals="1"><span class="sr-only">100만 명 이상</span><span aria-hidden="true"><span data-countup-value>1</span>M+<span class="stat-num__unit">명</span></span></dd>
+        </div>
+        <div class="hero-stats__item" data-area="assess">
+          <dt>교육 솔루션</dt>
+          <dd class="stat-num" data-countup="20"><span class="sr-only">20개 이상</span><span aria-hidden="true"><span data-countup-value>20</span>+<span class="stat-num__unit">개</span></span></dd>
+        </div>
+        <div class="hero-stats__item" data-area="campus">
+          <dt>에듀테크</dt>
+          <dd class="stat-num" data-countup="20"><span class="sr-only">20년 이상</span><span aria-hidden="true"><span data-countup-value>20</span>+<span class="stat-num__unit">년</span></span></dd>
+        </div>
+      </dl>
+      <button class="pause-btn pause-btn--dark" type="button" data-pause data-pause-name="히어로 배경과 대화 예시 움직임" aria-label="히어로 배경과 대화 예시 움직임 멈추기" hidden><span class="pause-btn__icon" aria-hidden="true"></span></button>
+    </div>
+  </section>
+
+  <!-- 2. 고객 밴드 — 왼쪽 문구·링크·정지 버튼 | 오른쪽 로고 2줄 (M9) -->
+  <section class="customers-band" aria-labelledby="logos-title">
+    <div class="container">
+      <div class="customers-band__box" data-pausable>
+        <div class="customers-band__head">
+          <h2 id="logos-title">400여 대학·기관이<br>Xinics와 함께합니다</h2>
+          <div class="customers-band__actions">
+            <a class="link-arrow" href="customers.html">고객사 전체 보기<svg class="btn__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <button class="pause-btn" type="button" data-pause data-pause-name="고객 로고 흐름" aria-label="고객 로고 흐름 멈추기" hidden><span class="pause-btn__icon" aria-hidden="true"></span></button>
+          </div>
+        </div>
+        <div class="customers-band__logos">
+          <div class="marquee" data-marquee>
+            <div class="marquee__viewport"><div class="marquee__inner"><ul class="marquee__track" role="list">
+              <li class="logo-tile"><img src="assets/logos/customers/catholic.webp" alt="가톨릭대학교" width="155" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/kyungsung.webp" alt="경성대학교" width="119" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/kiu.webp" alt="경일대학교" width="155" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/korea.webp" alt="고려대학교" width="134" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/kw.webp" alt="광운대학교" width="124" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/dnue.webp" alt="대구교육대학교" width="183" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/dhu.webp" alt="대구한의대학교" width="158" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/dongseo.webp" alt="동서대학교" width="174" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/masan.webp" alt="마산대학교" width="144" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/bist.webp" alt="부산과학기술대학교" width="219" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/bc.webp" alt="부천대학교" width="121" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/syu.webp" alt="삼육대학교" width="150" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/snu.webp" alt="서울대학교" width="160" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/sunmoon.webp" alt="선문대학교" width="131" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/wcc.webp" alt="세계사이버대학" width="142" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/suwon.webp" alt="수원대학교" width="114" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/sookmyung.webp" alt="숙명여자대학교" width="140" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/ssu.webp" alt="숭실대학교" width="177" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/ync.webp" alt="영남이공대학교" width="180" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/uc.webp" alt="울산과학대학교" width="153" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/jejunu.webp" alt="제주대학교" width="104" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/joongbu.webp" alt="중부대학교" width="165" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/cje.webp" alt="청주교육대학교" width="131" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/kaist.webp" alt="KAIST" width="128" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/kentech.webp" alt="한국에너지공과대학교" width="123" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/hannam.webp" alt="한남대학교" width="119" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/hanbat.webp" alt="국립한밭대학교" width="165" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/hanyang.webp" alt="한양대학교" width="121" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/pss.webp" alt="대통령경호처" width="128" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/udec-ulsan-gyeongnam.webp" alt="울산·경남 대학원격교육지원센터" width="148" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/joy.webp" alt="JOY 공유대학" width="126" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/kofac.webp" alt="한국과학창의재단" width="168" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/biopride.webp" alt="충북바이오헬스산업혁신센터" width="131" height="40" loading="lazy"></li>
+            </ul></div></div>
+          </div>
+          <div class="marquee marquee--reverse" data-marquee>
+            <div class="marquee__viewport"><div class="marquee__inner"><ul class="marquee__track" role="list">
+              <li class="logo-tile"><img src="assets/logos/customers/knu.webp" alt="경북대학교" width="138" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/ginue.webp" alt="경인교육대학교" width="174" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/khu.webp" alt="경희대학교" width="150" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/kongju.webp" alt="국립공주대학교" width="134" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/dankook.webp" alt="단국대학교" width="198" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/daegu.webp" alt="대구대학교" width="126" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/tu.webp" alt="동명대학교" width="123" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/donga.webp" alt="동아대학교" width="179" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/mmu.webp" alt="국립목포해양대학교" width="210" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/bufs.webp" alt="부산외국어대학교" width="168" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/cufs.webp" alt="사이버한국외국어대학교" width="194" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/seoultech.webp" alt="서울과학기술대학교" width="168" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/seojeong.webp" alt="서정대학교" width="124" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/skku.webp" alt="성균관대학교" width="150" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/songwon.webp" alt="송원대학교" width="183" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/swwu.webp" alt="수원여자대학교" width="148" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/sch.webp" alt="순천향대학교" width="187" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/yu.webp" alt="영남대학교" width="180" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/ysu.webp" alt="영산대학교" width="210" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/jtc.webp" alt="제주관광대학교" width="187" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/chu.webp" alt="제주한라대학교" width="144" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/cau.webp" alt="중앙대학교" width="148" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/ok.webp" alt="충청대학교" width="174" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/taejae.webp" alt="태재대학교" width="94" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/kmou.webp" alt="국립한국해양대학교" width="165" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/handong.webp" alt="한동대학교" width="133" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/hanseo.webp" alt="한서대학교" width="137" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/chungbuk.webp" alt="충북대학교" width="115" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/udec-capital.webp" alt="수도권 대학원격교육지원센터" width="138" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/udec-jeju.webp" alt="제주권 대학원격교육지원센터" width="133" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/share.webp" alt="지능형로봇혁신공유대학사업단" width="185" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/cnai.webp" alt="항공드론혁신융합대학" width="103" height="40" loading="lazy"></li>
+              <li class="logo-tile"><img src="assets/logos/customers/usg.webp" alt="USG 공유대학 2.0" width="206" height="40" loading="lazy"></li>
+            </ul></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Live in classrooms (B) -->
+  <section class="section" aria-labelledby="live-title">
+    <div class="container">
+      <header class="sh sh--center">
+        <p class="eyebrow" lang="en">Live in classrooms</p>
+        <h2 id="live-title">오늘도 수업 안에서<br>이렇게 돌아갑니다</h2>
+        <p>교수자 대시보드, AI 퀴즈, 실시간 자막, 예비 채점. 대학의 하루가 하나의 플랫폼에서 이어집니다.</p>
+      </header>
+      <div class="stage-wrap" data-pausable>
+        <button class="pause-btn" type="button" data-pause data-pause-name="제품 화면 예시 움직임" aria-label="제품 화면 예시 움직임 멈추기" hidden><span class="pause-btn__icon" aria-hidden="true"></span></button>
+        <div class="stage-area">
+        <div class="stage" data-loop data-inview role="img" aria-label="제품 화면 예시: 교수자 대시보드에서 진도율이 낮은 관심 학생 2명이 표시되고, AI 퀴즈 문항, 실시간 한영 자막, GradeFlow 예비 채점 결과가 함께 보입니다.">
+          <div class="ui-card ui-dashboard" aria-hidden="true">
+            <div class="ui-card__head"><span class="dot dot--teach"></span>LearningX · 교수자 대시보드<small>데이터구조 · 42명</small></div>
+            <div class="ui-dashboard__row ui-dashboard__row--head"><span>학생</span><span>진도율</span><span></span></div>
+            <div class="ui-dashboard__row"><span>김서연</span><div class="ui-bar"><span style="width:92%;--n:0"></span></div><span>92%</span></div>
+            <div class="ui-dashboard__row"><span>박지훈</span><div class="ui-bar"><span style="width:78%;--n:1"></span></div><span>78%</span></div>
+            <div class="ui-dashboard__row"><span>이도윤<span class="ui-flag">관심</span></span><div class="ui-bar ui-bar--warn"><span style="width:31%;--n:2"></span></div><span>31%</span></div>
+            <div class="ui-dashboard__row"><span>최하은</span><div class="ui-bar"><span style="width:85%;--n:3"></span></div><span>85%</span></div>
+            <div class="ui-dashboard__row"><span>정민준<span class="ui-flag">관심</span></span><div class="ui-bar ui-bar--warn"><span style="width:44%;--n:4"></span></div><span>44%</span></div>
+            <div class="ui-dashboard__row"><span>한예린</span><div class="ui-bar"><span style="width:69%;--n:5"></span></div><span>69%</span></div>
+            <div class="ui-dashboard__row"><span>윤서준</span><div class="ui-bar"><span style="width:88%;--n:6"></span></div><span>88%</span></div>
+          </div>
+          <div aria-hidden="true"><div class="ui-card ui-quiz" data-quiz>
+            <div class="ui-card__head"><span class="dot dot--assess"></span>XN Quiz<small>AI 생성</small></div>
+            후입선출(LIFO) 구조는?
+            <div class="ui-quiz__opt">큐<span>A</span></div>
+            <div class="ui-quiz__opt is-hit" data-correct>스택<span>B</span></div>
+            <div class="ui-quiz__opt">힙<span>C</span></div>
+          </div></div>
+          <div class="ui-card ui-caption-card" aria-hidden="true">
+            <div class="ui-card__head"><span class="dot dot--learn"></span>AI TransLive<small><span class="ui-live" lang="en">LIVE</span></small></div>
+            <div class="ui-caption"><span data-cycle='["큐는 먼저 들어온 데이터가 먼저 나갑니다.","다음 시간에는 트리 구조를 다룹니다."]'>스택은 마지막에 넣은 것을 먼저 꺼냅니다.</span><small lang="en" data-cycle='["In a queue, first in is first out.","Next class covers tree structures."]'>A stack returns the last item first.</small></div>
+          </div>
+          <div class="ui-card ui-grade" aria-hidden="true">
+            <div class="ui-card__head"><span class="dot dot--assess"></span>GradeFlow<small>예비 채점</small></div>
+            <span class="ui-chip ui-chip--brand">개념 이해 4/5</span><span class="ui-chip ui-chip--learn">근거 3/4</span>
+            <div style="margin-top:9px;color:var(--sub);line-height:1.55">시간 복잡도 설명은 정확하나 예시가 부족합니다.</div>
+          </div>
+        </div>
+        <p class="example-note example-note--corner">화면은 이해를 돕기 위한 예시입니다.</p>
+        </div>
+        <div class="domains">
+          <div class="domain" data-area="teach"><span class="domain__key" lang="en">TEACH</span><h3><a href="solutions/teach.html">수업 설계·제작</a></h3><p>AI Commons, Commons EX, 저작도구</p><span class="domain__go" aria-hidden="true">자세히<svg class="btn__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="domain" data-area="learn"><span class="domain__key" lang="en">LEARN</span><h3><a href="solutions/learn.html">학습 경험</a></h3><p>LearningX, AI Tutor, AI TransLive</p><span class="domain__go" aria-hidden="true">자세히<svg class="btn__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="domain" data-area="assess"><span class="domain__key" lang="en">ASSESS</span><h3><a href="solutions/assess.html">평가</a></h3><p>XN Quiz, GradeFlow, TrustLock</p><span class="domain__go" aria-hidden="true">자세히<svg class="btn__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="domain" data-area="campus"><span class="domain__key" lang="en">CAMPUS</span><h3><a href="solutions/campus.html">운영·분석</a></h3><p>AI Campus, LearningX AI 플랫폼</p><span class="domain__go" aria-hidden="true">자세히<svg class="btn__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. One platform — 4단계 탭 (M7) -->
+  <section class="section" id="platform" aria-labelledby="platform-title">
+    <div class="container">
+      <header class="sh">
+        <p class="eyebrow" lang="en">One platform</p>
+        <h2 id="platform-title">설계하고, 배우고, 평가하고,<br class="br-md"> 운영하는 일이 하나로</h2>
+        <p>네 단계의 데이터가 이어져서, 한 단계의 결과가 다음 단계를 더 똑똑하게 만듭니다.</p>
+      </header>
+      <div class="tabs" data-tabs data-pausable data-label="교육 단계">
+        <div class="tabs__side">
+        <div class="tabs__list">
+          <button class="tab" type="button" data-area="teach"><span class="tab__bar" aria-hidden="true"></span><span class="tab__key">01 · Teach</span><span class="tab__title">수업 설계와 콘텐츠 제작</span><span class="tab__desc">강의계획서 한 장으로 슬라이드, 스크립트, 영상, 퀴즈까지 만듭니다.</span></button>
+          <button class="tab" type="button" data-area="learn"><span class="tab__bar" aria-hidden="true"></span><span class="tab__key">02 · Learn</span><span class="tab__title">학생마다 다른 학습 경험</span><span class="tab__desc">AI Tutor가 강의자료를 근거로 답하고, 자막과 번역이 언어 장벽을 낮춥니다.</span></button>
+          <button class="tab" type="button" data-area="assess"><span class="tab__bar" aria-hidden="true"></span><span class="tab__key">03 · Assess</span><span class="tab__title">신뢰할 수 있는 평가</span><span class="tab__desc">XN Quiz가 문항을 만들고 GradeFlow가 예비 채점합니다. 판단은 교수자가 합니다.</span></button>
+          <button class="tab" type="button" data-area="campus"><span class="tab__bar" aria-hidden="true"></span><span class="tab__key">04 · Campus</span><span class="tab__title">캠퍼스 운영과 분석</span><span class="tab__desc">학칙과 학사 문서를 묻고 답하고, 관심 학생을 먼저 알려줍니다.</span></button>
+        </div>
+        <button class="pause-btn" type="button" data-pause data-pause-name="단계 자동 전환" aria-label="단계 자동 전환 멈추기" hidden><span class="pause-btn__icon" aria-hidden="true"></span></button>
+        </div>
+        <div class="tabs__stage">
+          <p class="example-note example-note--corner">화면은 이해를 돕기 위한 예시입니다.</p>
+          <div class="tab-panel"><figure role="img" aria-label="AI Commons 예시: 강의계획서에서 슬라이드 12장과 강의 영상이 차례로 만들어집니다."><div aria-hidden="true"><div class="flow-steps">
+            <div class="ui-card"><div class="ui-card__head"><span class="dot dot--teach"></span>강의계획서</div><div class="ui-lines"><span style="width:90%"></span><span style="width:70%"></span><span style="width:80%"></span><span style="width:55%"></span></div></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <div class="ui-card"><div class="ui-card__head"><span class="dot dot--teach"></span>AI Commons<small>생성됨</small></div><div class="ui-slide">슬라이드 12장</div><div class="ui-lines"><span style="width:80%"></span></div></div>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <div class="ui-card"><div class="ui-card__head"><span class="dot dot--teach"></span>강의 영상</div><div class="ui-slide ui-slide--video">▶ 18:24</div><div class="ui-lines"><span style="width:70%"></span></div></div>
+          </div></div></figure></div>
+          <div class="tab-panel"><figure role="img" aria-label="AI Tutor 예시: 시간 복잡도 질문에 5주차 강의자료 8쪽을 근거로 답합니다." style="width:min(440px,100%)"><div aria-hidden="true"><div class="ui-card ui-tutor">
+            <div class="ui-card__head"><span class="dot dot--learn"></span>AI Tutor<small>데이터구조</small></div>
+            <div class="ui-bubble ui-bubble--q">시간 복잡도가 O(log n)인 이유가 뭐야?</div>
+            <div class="ui-bubble ui-bubble--a"><span>이진 탐색은 매번 범위를 절반으로 줄여요. 1,024개면 최대 10번이면 찾습니다.</span><div class="ui-cite"><span>5주차 강의자료 p.8</span></div></div>
+          </div></div></figure></div>
+          <div class="tab-panel"><figure role="img" aria-label="GradeFlow 예비 채점 예시: 개념 이해 4/5, 논리 전개 3/5, 근거 제시 3/4." style="width:min(460px,100%)"><div aria-hidden="true">
+            <div class="ui-card ui-grade">
+              <div class="ui-card__head"><span class="dot dot--assess"></span>GradeFlow · 예비 채점<small>과제 2</small></div>
+              <div class="ui-grade__row"><span>개념 이해</span><div class="ui-bar"><span style="width:80%"></span></div><b>4/5</b></div>
+              <div class="ui-grade__row"><span>논리 전개</span><div class="ui-bar"><span style="width:60%"></span></div><b>3/5</b></div>
+              <div class="ui-grade__row"><span>근거 제시</span><div class="ui-bar"><span style="width:75%"></span></div><b>3/4</b></div>
+            </div></div></figure></div>
+          <div class="tab-panel"><figure role="img" aria-label="AI Campus 예시: 휴학 중 장학금 신청 가능 여부를 묻자 학칙과 장학금 지급 규정을 근거로 답합니다." style="width:min(460px,100%)"><div aria-hidden="true"><div class="ui-card ui-ask">
+            <div class="ui-card__head"><span class="dot dot--campus"></span>AI Campus</div>
+            <div class="ui-ask__q">휴학 중에도 장학금 신청이 가능한가요?</div>
+            <p class="ui-ask__a">휴학생은 교내 장학금 대상에서 제외됩니다. 복학 예정 학기 장학금은 복학 신청 후 신청할 수 있습니다.</p>
+            <div class="ui-pills" style="margin-top:12px"><span>학칙 제42조</span><span>장학금 지급 규정 제7조</span></div>
+          </div></div></figure></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Products — 벤토 -->
+  <section class="section" aria-labelledby="products-title">
+    <div class="container">
+      <header class="sh">
+        <p class="eyebrow" lang="en">Products</p>
+        <h2 id="products-title">수업에 바로 쓰는 AI</h2>
+        <p>LMS 안에서 바로 열리고, 학교의 자료를 근거로 동작합니다.</p>
+      </header>
+      <div class="bento">
+        <div class="bento__row bento__row--a">
+          <article class="bento-card bento-card--dark on-dark" data-area="learn">
+            <p class="bento-card__tag">AI TransLive</p>
+            <h3>실시간 자막과 통역</h3>
+            <p>강의를 듣는 동안 자막과 번역이 함께 흐릅니다.</p>
+            <figure class="bento-card__viz" data-loop role="img" aria-label="실시간 자막 예시: 강의 음성이 한국어 자막과 영어 번역으로 함께 표시됩니다.">
+              <div aria-hidden="true">
+                <div class="ui-wave"><span style="--h:0.3;--n:0"></span><span style="--h:0.66;--n:1"></span><span style="--h:0.86;--n:2"></span><span style="--h:0.84;--n:3"></span><span style="--h:0.64;--n:4"></span><span style="--h:0.41;--n:5"></span><span style="--h:0.32;--n:6"></span><span style="--h:0.32;--n:7"></span><span style="--h:0.48;--n:8"></span><span style="--h:0.63;--n:9"></span><span style="--h:0.63;--n:10"></span><span style="--h:0.43;--n:11"></span><span style="--h:0.5;--n:12"></span><span style="--h:0.83;--n:13"></span><span style="--h:0.99;--n:14"></span><span style="--h:0.92;--n:15"></span><span style="--h:0.65;--n:16"></span><span style="--h:0.34;--n:17"></span><span style="--h:0.47;--n:18"></span><span style="--h:0.5;--n:19"></span><span style="--h:0.38;--n:20"></span><span style="--h:0.37;--n:21"></span><span style="--h:0.41;--n:22"></span><span style="--h:0.33;--n:23"></span><span style="--h:0.6;--n:24"></span><span style="--h:0.86;--n:25"></span><span style="--h:0.96;--n:26"></span><span style="--h:0.83;--n:27"></span><span style="--h:0.51;--n:28"></span><span style="--h:0.46;--n:29"></span><span style="--h:0.71;--n:30"></span><span style="--h:0.75;--n:31"></span><span style="--h:0.61;--n:32"></span><span style="--h:0.42;--n:33"></span><span style="--h:0.3;--n:34"></span><span style="--h:0.35;--n:35"></span><span style="--h:0.54;--n:36"></span><span style="--h:0.73;--n:37"></span><span style="--h:0.78;--n:38"></span><span style="--h:0.62;--n:39"></span></div>
+                <div class="ui-caption" style="font-size:15px;padding:16px 18px;background:var(--night-2)"><span class="ui-live" lang="en">LIVE</span><div style="margin-top:4px">스택은 마지막에 넣은 것을 먼저 꺼냅니다.</div><small lang="en">A stack returns the last item first.</small></div>
+                <div class="ui-lang"><span>한국어</span><span lang="en">→ English</span></div>
+              </div>
+            </figure>
+          </article>
+          <article class="bento-card" data-area="teach">
+            <p class="bento-card__tag">AI Commons</p>
+            <h3>강의계획서로 만드는 강의</h3>
+            <p>슬라이드, 스크립트, 영상, 퀴즈를 한 번에 초안으로.</p>
+            <figure class="bento-card__viz" role="img" aria-label="AI Commons 예시: 강의계획서 한 장에서 슬라이드 12장, 강의 스크립트, 퀴즈 10문항 초안이 생성됩니다.">
+              <div class="gen-flow" aria-hidden="true">
+                <div class="ui-card gen-flow__doc"><div class="ui-card__head"><span class="dot dot--teach"></span>강의계획서</div><div class="ui-lines"><span style="width:90%"></span><span style="width:70%"></span><span style="width:80%"></span><span style="width:55%"></span></div></div>
+                <svg width="22" height="22" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div class="gen-flow__out">
+                  <div><span class="dot dot--teach"></span>슬라이드 12장<small>생성됨</small></div>
+                  <div><span class="dot dot--teach"></span>강의 스크립트<small>생성됨</small></div>
+                  <div><span class="dot dot--teach"></span>퀴즈 10문항<small>생성됨</small></div>
+                </div>
+              </div>
+            </figure>
+          </article>
+        </div>
+        <div class="bento__row bento__row--b">
+          <article class="bento-card" data-area="assess">
+            <p class="bento-card__tag">TrustLock</p>
+            <h3>온라인 시험 감독</h3>
+            <p>이상 행동을 탐지해 부정행위를 막습니다.</p>
+            <figure class="bento-card__viz" role="img" aria-label="시험 감독 예시: 응시자 40명 중 38명 정상, 2명 화면 이탈 감지.">
+              <div aria-hidden="true">
+                <div class="seat-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="is-warn"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="is-warn"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="ui-log"><div><span class="dot dot--learn"></span>38명 정상 응시<span>10:42</span></div><div class="is-warn"><span class="dot dot--campus"></span>화면 이탈 2명<span>10:44</span></div></div>
+              </div>
+            </figure>
+          </article>
+          <article class="bento-card">
+            <p class="bento-card__tag">LearningX AI 플랫폼</p>
+            <h3>대학이 통제하는 AI</h3>
+            <p>모델, 권한, 사용량을 학교가 직접 관리합니다.</p>
+            <figure class="bento-card__viz" role="img" aria-label="AI 플랫폼 관리 화면 예시: 승인 모델 관리, 학과별 활성화(공과대학 켜짐, 인문대학 꺼짐), 이번 달 사용량 62%, 감사 로그 기록 중.">
+              <div class="ui-card ui-settings" aria-hidden="true">
+                <div class="ui-card__head"><span class="dot"></span>AI 관리<small>관리자</small></div>
+                <div class="ui-settings__row"><span>모델 관리</span><b>승인 모델 3개</b></div>
+                <div class="ui-settings__row"><span>학과별 활성화</span><b>공과대학</b><i class="ui-switch is-on"></i></div>
+                <div class="ui-settings__row"><span></span><b>인문대학</b><i class="ui-switch"></i></div>
+                <div class="ui-settings__row"><span>사용량</span><div class="ui-bar"><span style="width:62%;background:var(--brand)"></span></div><b>62%</b></div>
+                <div class="ui-settings__row"><span>감사 로그</span><b>기록 중</b></div>
+              </div>
+            </figure>
+          </article>
+          <article class="bento-card" data-area="learn">
+            <p class="bento-card__tag">LearningHUB</p>
+            <h3>학생의 하루를 한 화면에</h3>
+            <p>모든 과목의 할 일과 진도, AI 검색을 하나의 학습 홈에서.</p>
+          </article>
+        </div>
+      </div>
+      <p class="example-note example-note--right">화면은 이해를 돕기 위한 예시입니다.</p>
+    </div>
+  </section>
+
+  <!-- 6. Services -->
+  <section class="section" aria-labelledby="services-title">
+    <div class="container">
+      <header class="sh">
+        <p class="eyebrow" lang="en">Services</p>
+        <h2 id="services-title">소프트웨어 너머까지</h2>
+        <p>강의실과 서버까지 함께 만들고 운영합니다.</p>
+      </header>
+      <div class="svc">
+        <article class="svc-card">
+          <span class="svc-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="12" height="12" rx="2"/><path d="M15 10.5l6-3.5v10l-6-3.5"/></svg></span>
+          <p class="svc-card__label">Zoom Education 공식 파트너</p>
+          <h3>화상강의를 LMS 안에서</h3>
+          <p class="svc-card__desc">계약부터 운영까지, 예약·실행·출결을 LMS에서 한 번에.</p>
+          <dl class="svc-card__foot"><dt>Zoom 운영 대학·기관</dt><dd class="stat-num">50+<span class="stat-num__unit">곳</span></dd></dl>
+        </article>
+        <article class="svc-card">
+          <span class="svc-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/><path d="M2 20h20"/></svg></span>
+          <p class="svc-card__label">교육 시설 구축</p>
+          <h3>스튜디오와 하이브리드 강의실</h3>
+          <p class="svc-card__desc">셀프 스튜디오, 자동녹화 강의실, LED 컨퍼런스룸 설계·구축.</p>
+          <dl class="svc-card__foot"><dt>대학·기관 구축</dt><dd class="stat-num">40+<span class="stat-num__unit">곳</span></dd></dl>
+        </article>
+        <article class="svc-card">
+          <span class="svc-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.2 9.6 4.2 4.2 0 0 0 7 18z"/></svg></span>
+          <p class="svc-card__label">클라우드 매니지드 서비스</p>
+          <h3>멈추지 않는 학사 시스템</h3>
+          <p class="svc-card__desc">공공·민간 클라우드에서 웹과 DB의 보안과 성능을 관리합니다.</p>
+          <dl class="svc-card__foot"><dt>대학 클라우드 운영</dt><dd class="stat-num">40+<span class="stat-num__unit">곳</span></dd></dl>
+        </article>
+      </div>
+      <p style="margin-top:24px"><a class="link-arrow" href="services.html">Services 자세히 보기<svg class="btn__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="callout on-dark" aria-labelledby="callout-title">
+      <canvas data-flow="cta" aria-hidden="true"></canvas>
+      <p class="eyebrow callout__label" lang="en">About Xinics</p>
+      <h2 id="callout-title"><span lang="en">Exciting Technology Companions</span></h2>
+      <p class="callout__text">20년 이상 400여 대학·기관과 함께한 교육 혁신 파트너</p>
+      <dl class="callout__facts"><div><dt lang="en">Integrate</dt><dd>LMS·CMS·AI를 하나의 생태계로</dd></div><div><dt lang="en">Inspire</dt><dd>교수자·학습자의 창의적 동기</dd></div><div><dt lang="en">Impact</dt><dd>학습 성과를 증명하는 플랫폼</dd></div></dl>
+    </section>
+  </div>
+</main>
+
+<!-- FOOTER:START -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="site-logo" href="./" aria-current="page">
+          <img class="site-logo__img" src="./assets/logos/xinics.svg" alt="Xinics 홈" width="101" height="28">
+        </a>
+        <address class="site-footer__info">
+          <p>서울특별시 구로구 디지털로31길 53, 1101 (이앤씨벤처드림타워5차 11층)</p>
+          <p>
+            <span>T. <a href="tel:+8228658801">02-865-8801</a></span>
+            <span>F. 02-865-8803</span>
+            <span><a href="mailto:contact@xinics.com">contact@xinics.com</a></span>
+          </p>
+          <p><span>㈜자이닉스</span><span>사업자등록번호 211-86-98281</span></p>
+        </address>
+      </div>
+
+      <nav class="site-footer__col" aria-labelledby="footer-solutions">
+        <h2 class="site-footer__title" id="footer-solutions">Solutions</h2>
+        <ul role="list">
+          <li><a href="./solutions/teach.html">Teach</a></li>
+          <li><a href="./solutions/learn.html">Learn</a></li>
+          <li><a href="./solutions/assess.html">Assess</a></li>
+          <li><a href="./solutions/campus.html">Campus</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__col" aria-labelledby="footer-company">
+        <h2 class="site-footer__title" id="footer-company">Company</h2>
+        <ul role="list">
+          <li><a href="./company/about.html">About</a></li>
+          <li><a href="./company/culture.html">Culture</a></li>
+          <li><a href="./company/recruit.html">Recruit</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__col" aria-labelledby="footer-more">
+        <h2 class="site-footer__title" id="footer-more">바로가기</h2>
+        <ul role="list">
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./customers.html">Customers</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="https://xinics.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener" lang="en">Service Desk<span class="sr-only" lang="ko"> (새 창)</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="site-footer__bottom">
+      <!-- 연도는 JS 없이 하드코딩. 매년 수정 -->
+      <p><small>© 2026 Xinics Inc. All rights reserved.</small></p>
+      <p lang="en">Exciting Technology Companions</p>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER:END -->
+</body>
+</html>

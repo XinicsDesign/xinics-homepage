@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sitemap 규격상 절대 URL 필수. 도메인 변경 시 이 파일과 robots.txt 의 Sitemap 줄을 함께 수정 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://home.xinics.com/</loc></url>
+  <url><loc>https://home.xinics.com/solutions/teach.html</loc></url>
+  <url><loc>https://home.xinics.com/solutions/learn.html</loc></url>
+  <url><loc>https://home.xinics.com/solutions/assess.html</loc></url>
+  <url><loc>https://home.xinics.com/solutions/campus.html</loc></url>
+  <url><loc>https://home.xinics.com/services.html</loc></url>
+  <url><loc>https://home.xinics.com/customers.html</loc></url>
+  <url><loc>https://home.xinics.com/company/about.html</loc></url>
+  <url><loc>https://home.xinics.com/company/culture.html</loc></url>
+  <url><loc>https://home.xinics.com/company/recruit.html</loc></url>
+  <url><loc>https://home.xinics.com/contact.html</loc></url>
+</urlset>
