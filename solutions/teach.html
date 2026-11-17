@@ -91,39 +91,58 @@
     </section>
   </div>
 
-
-  <section class="section" aria-labelledby="scenes-title">
-    <div class="container">
-      <header class="sh"><p class="eyebrow" lang="en">In action</p><h2 id="scenes-title">설계와 제작은 이렇게</h2></header>
-      <div class="bento scenes">
-        <div class="bento__row bento__row--a">
-          <article class="bento-card bento-card--dark on-dark" data-area="teach">
-            <p class="bento-card__tag" lang="en">LectureDeck</p>
-            <h3>버튼 없이 녹화되는 강의실</h3>
-            <p>강의실 수업을 별도 조작 없이 녹화해 자동으로 올립니다.</p>
-            <figure class="bento-card__viz" role="img" aria-label="강의실 녹화 예시: 301호 수업이 녹화 중이고, 수업이 끝나면 자동 업로드되어 CMS와 LMS에 게시됩니다.">
-              <div aria-hidden="true"><div class="ui-card ui-rec">
+  <section class="section spots-section" aria-label="핵심 제품">
+    <div class="container spots">
+      <article class="spot" data-area="teach" aria-labelledby="spot-1">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">01</span><span class="spot__name">AI Commons</span></p>
+          <h2 id="spot-1" class="spot__title">강의계획서 <span class="nowrap">한 장으로</span> 강의 초안까지</h2>
+          <p class="spot__desc">강의 설계부터 강의 콘텐츠·슬라이드·영상 제작까지 AI가 지원</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>강의계획서 생성</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>강의 스크립트 생성</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>퀴즈 생성</span></li></ul>
+        </div>
+        <figure class="spot__visual" role="img" aria-label="AI Commons 예시: 강의계획서 한 장에서 슬라이드 12장, 강의 스크립트, 퀴즈 10문항 초안이 생성됩니다.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-gen">
+                <div class="ui-card__head"><span class="dot dot--teach"></span>AI Commons<small>데이터구조 · 3주차</small></div>
+                <div class="ui-gen__src"><b>강의계획서</b><div class="ui-lines"><span style="width:90%"></span><span style="width:70%"></span><span style="width:80%"></span></div></div>
+                <div class="ui-gen__out">
+                  <div><span class="dot dot--teach"></span>슬라이드 12장<small>생성됨</small></div>
+                  <div><span class="dot dot--teach"></span>강의 스크립트<small>생성됨</small></div>
+                  <div><span class="dot dot--teach"></span>퀴즈 10문항<small>생성됨</small></div>
+                </div>
+              </div></div>
+        </figure>
+      </article>
+      <article class="spot" data-area="teach" aria-labelledby="spot-2">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">02</span><span class="spot__name">LectureDeck / LectureDeck Office</span></p>
+          <h2 id="spot-2" class="spot__title">버튼 없이 녹화되는 강의실</h2>
+          <p class="spot__desc">강의실 수업을 별도 조작 없이 녹화해 자동으로 올리는 강의 녹화 자동화 솔루션.</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>Full HD 실시간 녹화</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>라이브 송출</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>CMS·LMS 자동 게시</span></li></ul>
+        </div>
+        <figure class="spot__visual" role="img" aria-label="강의실 녹화 예시: 301호 수업이 녹화 중이고, 수업이 끝나면 자동 업로드되어 CMS와 LMS에 게시됩니다.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-rec">
                 <div class="ui-card__head"><span class="ui-rec__dot"></span>LectureDeck · 301호<small>REC 00:42:18</small></div>
                 <div class="ui-slide ui-slide--video">데이터구조 · 3주차</div>
                 <div class="ui-rec__flow"><span>수업 종료</span><i>→</i><span>자동 업로드</span><i>→</i><span>CMS · LMS 게시</span></div>
               </div></div>
-            </figure>
-          </article>
-          <article class="bento-card" data-area="teach">
-            <p class="bento-card__tag" lang="en">Commons EX</p>
-            <h3>콘텐츠를 한곳에서</h3>
-            <p>영상·PDF·YouTube를 등록하고 과목과 사용자 사이에 공유합니다.</p>
-            <figure class="bento-card__viz" role="img" aria-label="콘텐츠 라이브러리 예시: 자막이 붙은 강의 영상, 메타데이터가 추출된 PDF, 3개 과목에 공유된 YouTube 영상.">
-              <div aria-hidden="true"><div class="ui-card ui-lib">
+        </figure>
+      </article>
+      <article class="spot" data-area="teach" aria-labelledby="spot-3">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">03</span><span class="spot__name">Commons EX</span></p>
+          <h2 id="spot-3" class="spot__title">모든 강의 콘텐츠를 한곳에서</h2>
+          <p class="spot__desc">교육 콘텐츠 제작·관리·배포/공유 통합 CMS</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>영상·PDF·YouTube·자막 등록</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>메타데이터 자동 추출</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>과목·사용자 간 공유·재사용, AI 자막 연계</span></li></ul>
+        </div>
+        <figure class="spot__visual" role="img" aria-label="콘텐츠 라이브러리 예시: 자막이 붙은 강의 영상, 메타데이터가 추출된 PDF, 3개 과목에 공유된 YouTube 영상.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-lib">
                 <div class="ui-card__head"><span class="dot dot--teach"></span>Commons EX<small>내 콘텐츠</small></div>
                 <div class="ui-lib__row"><b>영상</b><span>데이터구조 3주차 · 18:24</span><em>자막</em></div>
                 <div class="ui-lib__row"><b lang="en">PDF</b><span>5주차 강의자료</span><em>메타데이터</em></div>
                 <div class="ui-lib__row"><b lang="en">YouTube</b><span>알고리즘 특강</span><em>공유 3과목</em></div>
               </div></div>
-            </figure>
-          </article>
-        </div>
-      </div>
+        </figure>
+      </article>
     </div>
   </section>
 
@@ -131,74 +150,28 @@
     <div class="container">
       <header class="sh">
         <p class="eyebrow" lang="en">10 products</p>
-        <h2 id="products-title">설계·제작 단계의 제품</h2>
+        <h2 id="products-title">설계·제작 단계의 모든 제품</h2>
         <p>필요한 것만 골라 쓰고, 함께 쓰면 데이터가 이어집니다.</p>
       </header>
-      <div class="product-group">
-        <h3 class="product-group__title">AI 제작</h3>
-        <div class="pfeats">
-          <article class="pfeat" id="product-ai-commons" data-area="teach">
-            <div class="pfeat__body">
-              <div class="pfeat__top"><span class="p-icon" aria-hidden="true">AC</span><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div>
-              <h4 class="pfeat__name">AI Commons</h4>
-              <p class="pfeat__desc">강의 설계부터 강의 콘텐츠·슬라이드·영상 제작까지 AI가 지원</p>
-              <ul class="p-tags" role="list"><li>강의계획서 생성</li><li>강의 스크립트 생성</li><li>퀴즈 생성</li></ul>
-            </div>
-            <figure class="pfeat__visual" role="img" aria-label="AI Commons 예시: 강의계획서에서 슬라이드, 스크립트, 퀴즈 초안이 만들어집니다."><div aria-hidden="true"><div class="ui-card"><div class="ui-card__head"><span class="dot dot--teach"></span>AI Commons<small>생성됨</small></div><div class="ui-pills"><span>강의계획서</span><span>→ 슬라이드 12장</span><span>→ 스크립트</span><span>→ 퀴즈 10문항</span></div></div></div></figure>
-          </article>
-        </div>
-        <div class="prows">
-          <article class="prow" id="product-ai-commons-neo" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">NE</span><div><h4 class="prow__name">AI Commons Neo</h4><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li><li class="badge badge--ai">AI</li></ul></div></div>
-            <p class="prow__desc">거꾸로 수업·토론 등 수업 유형에 맞춰 참여 활동과 학습 과정을 설계하도록 돕는 AI.</p>
-            <ul class="p-tags" role="list"><li>수업 유형별 활동 설계</li><li>퀴즈·과제·활동 자료 준비</li><li>혁신수업 설계안 검토 지원</li></ul>
-          </article>
-          <article class="prow" id="product-interactflow" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">IF</span><div><h4 class="prow__name">InteractFlow</h4><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li></ul></div></div>
-            <p class="prow__desc">설명·질문·퀴즈·연습·말하기·쓰기를 한 차시의 학습 흐름으로 엮는 상호작용 콘텐츠.</p>
-            <ul class="p-tags" role="list"><li>차시 단위 학습 흐름</li><li>온라인·대면 수업 활용</li><li>AI Commons·ClassHUB 연동</li></ul>
-          </article>
-          <article class="prow" id="product-commons-ex" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">EX</span><div><h4 class="prow__name">Commons EX</h4><ul class="badges" role="list"><li class="badge">CMS</li></ul></div></div>
-            <p class="prow__desc">교육 콘텐츠 제작·관리·배포/공유 통합 CMS</p>
-            <ul class="p-tags" role="list"><li>영상·PDF·YouTube·자막 등록</li><li>메타데이터 자동 추출</li><li>과목·사용자 간 공유·재사용, AI 자막 연계</li></ul>
-          </article>
-          <article class="prow" id="product-lcdms" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">LC</span><div><h4 class="prow__name">LCDMS</h4><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li></ul></div></div>
-            <p class="prow__desc">강의 콘텐츠의 기획·제작·검수·수정 이력부터 LMS 게시까지 관리하는 제작 관리 시스템.</p>
-            <ul class="p-tags" role="list"><li>제작·검수·승인 절차</li><li>스튜디오 예약·촬영 일정 연결</li><li>LMS 게시</li></ul>
-          </article>
-          <article class="prow" id="product-cloud-editor" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">CE</span><div><h4 class="prow__name">Cloud Editor</h4><ul class="badges" role="list"><li class="badge">편집</li></ul></div></div>
-            <p class="prow__desc">녹화한 강의 영상을 설치 없이 웹에서 바로 편집.</p>
-            <ul class="p-tags" role="list"><li>자르기·붙이기</li><li>구간 편집</li><li>Commons 바로 저장</li></ul>
-          </article>
-        </div>
+      <div class="ptile-group">
+        <h3 class="ptile-group__title">AI 제작</h3>
+        <ul class="ptiles" role="list">
+          <li class="ptile" id="product-ai-commons" data-area="teach"><span class="p-icon" aria-hidden="true">AC</span><div><div class="ptile__head"><h4 class="ptile__name">AI Commons</h4><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div><p class="ptile__desc">강의 설계부터 강의 콘텐츠·슬라이드·영상 제작까지 AI가 지원</p></div></li>
+          <li class="ptile" id="product-ai-commons-neo" data-area="teach"><span class="p-icon" aria-hidden="true">NE</span><div><div class="ptile__head"><h4 class="ptile__name">AI Commons Neo</h4><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li><li class="badge badge--ai">AI</li></ul></div><p class="ptile__desc">거꾸로 수업·토론 등 수업 유형에 맞춰 참여 활동과 학습 과정을 설계하도록 돕는 AI.</p></div></li>
+          <li class="ptile" id="product-interactflow" data-area="teach"><span class="p-icon" aria-hidden="true">IF</span><div><div class="ptile__head"><h4 class="ptile__name">InteractFlow</h4><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li></ul></div><p class="ptile__desc">설명·질문·퀴즈·연습·말하기·쓰기를 한 차시의 학습 흐름으로 엮는 상호작용 콘텐츠.</p></div></li>
+          <li class="ptile" id="product-commons-ex" data-area="teach"><span class="p-icon" aria-hidden="true">EX</span><div><div class="ptile__head"><h4 class="ptile__name">Commons EX</h4><ul class="badges" role="list"><li class="badge">CMS</li></ul></div><p class="ptile__desc">교육 콘텐츠 제작·관리·배포/공유 통합 CMS</p></div></li>
+          <li class="ptile" id="product-lcdms" data-area="teach"><span class="p-icon" aria-hidden="true">LC</span><div><div class="ptile__head"><h4 class="ptile__name">LCDMS</h4><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li></ul></div><p class="ptile__desc">강의 콘텐츠의 기획·제작·검수·수정 이력부터 LMS 게시까지 관리하는 제작 관리 시스템.</p></div></li>
+          <li class="ptile" id="product-cloud-editor" data-area="teach"><span class="p-icon" aria-hidden="true">CE</span><div><div class="ptile__head"><h4 class="ptile__name">Cloud Editor</h4><ul class="badges" role="list"><li class="badge">편집</li></ul></div><p class="ptile__desc">녹화한 강의 영상을 설치 없이 웹에서 바로 편집.</p></div></li>
+        </ul>
       </div>
-      <div class="product-group">
-        <h3 class="product-group__title">녹화·저작도구</h3>
-        <div class="prows">
-          <article class="prow" id="product-readystream" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">RD</span><div><h4 class="prow__name">ReadyStream</h4><ul class="badges" role="list"><li class="badge">저작도구</li></ul></div></div>
-            <p class="prow__desc">강의 영상과 강의자료를 맞춰 붙여 HTML5 콘텐츠로 만드는 전문가용 저작도구.</p>
-            <ul class="p-tags" role="list"><li>실시간 녹화 (Producer)</li><li>자료·영상 동기화 편집 (Studio)</li><li>MP4·HTML5 출력</li></ul>
-          </article>
-          <article class="prow" id="product-lecturedeck" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">LD</span><div><h4 class="prow__name">LectureDeck / LectureDeck Office</h4><ul class="badges" role="list"><li class="badge">강의 녹화</li></ul></div></div>
-            <p class="prow__desc">강의실 수업을 별도 조작 없이 녹화해 자동으로 올리는 강의 녹화 자동화 솔루션.</p>
-            <ul class="p-tags" role="list"><li>Full HD 실시간 녹화</li><li>라이브 송출</li><li>CMS·LMS 자동 게시</li></ul>
-          </article>
-          <article class="prow" id="product-everlec" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">EL</span><div><h4 class="prow__name">EverLec</h4><ul class="badges" role="list"><li class="badge">저작도구</li></ul></div></div>
-            <p class="prow__desc">PPT 슬라이드쇼나 화면을 녹화해 강의 영상을 만드는 개인용 저작도구.</p>
-            <ul class="p-tags" role="list"><li>PPT·화면 녹화</li><li>판서·웹캠 함께 녹화</li><li>Commons 바로 업로드</li></ul>
-          </article>
-          <article class="prow" id="product-syncthink" data-area="teach">
-            <div class="prow__head"><span class="p-icon" aria-hidden="true">ST</span><div><h4 class="prow__name">SyncThink</h4><ul class="badges" role="list"><li class="badge">모바일</li></ul></div></div>
-            <p class="prow__desc">스마트기기로 발표 자료와 음성을 맞춰 강의 콘텐츠를 만드는 모바일 앱.</p>
-            <ul class="p-tags" role="list"><li>모바일 녹화</li><li>자료·음성 동기화</li><li>Commons 연계</li></ul>
-          </article>
-        </div>
+      <div class="ptile-group">
+        <h3 class="ptile-group__title">녹화·저작도구</h3>
+        <ul class="ptiles" role="list">
+          <li class="ptile" id="product-readystream" data-area="teach"><span class="p-icon" aria-hidden="true">RD</span><div><div class="ptile__head"><h4 class="ptile__name">ReadyStream</h4><ul class="badges" role="list"><li class="badge">저작도구</li></ul></div><p class="ptile__desc">강의 영상과 강의자료를 맞춰 붙여 HTML5 콘텐츠로 만드는 전문가용 저작도구.</p></div></li>
+          <li class="ptile" id="product-lecturedeck" data-area="teach"><span class="p-icon" aria-hidden="true">LD</span><div><div class="ptile__head"><h4 class="ptile__name">LectureDeck / LectureDeck Office</h4><ul class="badges" role="list"><li class="badge">강의 녹화</li></ul></div><p class="ptile__desc">강의실 수업을 별도 조작 없이 녹화해 자동으로 올리는 강의 녹화 자동화 솔루션.</p></div></li>
+          <li class="ptile" id="product-everlec" data-area="teach"><span class="p-icon" aria-hidden="true">EL</span><div><div class="ptile__head"><h4 class="ptile__name">EverLec</h4><ul class="badges" role="list"><li class="badge">저작도구</li></ul></div><p class="ptile__desc">PPT 슬라이드쇼나 화면을 녹화해 강의 영상을 만드는 개인용 저작도구.</p></div></li>
+          <li class="ptile" id="product-syncthink" data-area="teach"><span class="p-icon" aria-hidden="true">ST</span><div><div class="ptile__head"><h4 class="ptile__name">SyncThink</h4><ul class="badges" role="list"><li class="badge">모바일</li></ul></div><p class="ptile__desc">스마트기기로 발표 자료와 음성을 맞춰 강의 콘텐츠를 만드는 모바일 앱.</p></div></li>
+        </ul>
       </div>
       <p class="example-note example-note--right">화면은 이해를 돕기 위한 예시입니다.</p>
 

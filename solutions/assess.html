@@ -97,36 +97,56 @@
     </section>
   </div>
 
-
-  <section class="section" aria-labelledby="scenes-title">
-    <div class="container">
-      <header class="sh"><p class="eyebrow" lang="en">In action</p><h2 id="scenes-title">평가는 이렇게</h2></header>
-      <div class="bento scenes">
-        <div class="bento__row bento__row--a">
-          <article class="bento-card bento-card--dark on-dark" data-area="assess">
-            <p class="bento-card__tag" lang="en">GradeFlow</p>
-            <h3>서술형 과제 예비 채점</h3>
-            <p>루브릭 기준으로 예비 채점과 피드백을 만들고, 교수자가 <span class="nowrap">수정·승인합니다.</span></p>
-            <figure class="bento-card__viz" role="img" aria-label="예비 채점 예시: 루브릭 항목별 점수(개념 이해 4/5, 근거 3/4)와 피드백이 만들어지고 교수자가 수정 후 승인합니다.">
-              <div aria-hidden="true"><div class="ui-card ui-grade">
+  <section class="section spots-section" aria-label="핵심 제품">
+    <div class="container spots">
+      <article class="spot" data-area="assess" aria-labelledby="spot-1">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">01</span><span class="spot__name">XN Quiz</span></p>
+          <h2 id="spot-1" class="spot__title">문항 생성부터 자동 채점까지</h2>
+          <p class="spot__desc">강의자료 기반 AI 문항 생성부터 배포·응시·자동 채점까지.</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>강의자료 기반 AI 문항 생성</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>검토·승인 → 배포·응시·자동 채점</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>LMS 성적 연계</span></li></ul>
+        </div>
+        <figure class="spot__visual" role="img" aria-label="XN Quiz 예시: 강의자료로 만든 문항에서 정답 '스택'이 표시됩니다.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-quiz" data-quiz>
+            <div class="ui-card__head"><span class="dot dot--assess"></span>XN Quiz<small>검토 대기</small></div>
+            후입선출(LIFO) 구조는?
+            <div class="ui-quiz__opt">큐<span>A</span></div>
+            <div class="ui-quiz__opt is-hit" data-correct>스택<span>B</span></div>
+            <div class="ui-quiz__opt">힙<span>C</span></div>
+          </div></div>
+        </figure>
+      </article>
+      <article class="spot" data-area="assess" aria-labelledby="spot-2">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">02</span><span class="spot__name">GradeFlow</span></p>
+          <h2 id="spot-2" class="spot__title">서술형 과제도 예비 채점</h2>
+          <p class="spot__desc">서술형·풀이형 과제 AI 예비 채점과 피드백.</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>루브릭 설계</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>AI 예비 채점·피드백</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>교수자 수정·승인</span></li></ul>
+        </div>
+        <figure class="spot__visual" role="img" aria-label="예비 채점 예시: 루브릭 항목별 점수(개념 이해 4/5, 근거 3/4)와 피드백이 만들어지고 교수자가 수정 후 승인합니다.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-grade">
                 <div class="ui-card__head"><span class="dot dot--assess"></span>GradeFlow<small>예비 채점</small></div>
                 <span class="ui-chip ui-chip--brand">개념 이해 4/5</span><span class="ui-chip ui-chip--learn">근거 3/4</span>
                 <div style="margin-top:9px;color:var(--sub);line-height:1.55">시간 복잡도 설명은 정확하나 예시가 부족합니다.</div>
                 <div class="ui-approve"><span>교수자 검토</span><b>수정 후 승인</b></div>
               </div></div>
-            </figure>
-          </article>
-          <article class="bento-card" data-area="assess">
-            <p class="bento-card__tag" lang="en">TrustLock</p>
-            <h3>온라인 시험 감독</h3>
-            <p>이상 행동을 탐지해 부정행위를 막습니다.</p>
-            <figure class="bento-card__viz" role="img" aria-label="시험 감독 예시: 응시자 40명 중 38명 정상, 2명 화면 이탈 감지.">
-              <div aria-hidden="true"><div class="seat-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="is-warn"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="is-warn"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-                <div class="ui-log"><div><span class="dot dot--learn"></span>38명 정상 응시<span>10:42</span></div><div class="is-warn"><span class="dot dot--campus"></span>화면 이탈 2명<span>10:44</span></div></div></div>
-            </figure>
-          </article>
+        </figure>
+      </article>
+      <article class="spot" data-area="assess" aria-labelledby="spot-3">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">03</span><span class="spot__name">TrustLock AI Proctoring</span></p>
+          <h2 id="spot-3" class="spot__title">온라인 시험도 안심하고</h2>
+          <p class="spot__desc">온라인 시험 감독, 이상 행동 탐지로 부정행위 방지.</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>온라인 시험 감독</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>이상 행동 탐지</span></li></ul>
         </div>
-      </div>
+        <figure class="spot__visual" role="img" aria-label="시험 감독 예시: 응시자 40명 중 38명 정상, 2명 화면 이탈 감지.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-proctor">
+                <div class="ui-card__head"><span class="dot dot--assess"></span>TrustLock<small>중간고사 · 40명</small></div>
+                <div class="seat-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="is-warn"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="is-warn"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="ui-log"><div><span class="dot dot--learn"></span>38명 정상 응시<span>10:42</span></div><div class="is-warn"><span class="dot dot--campus"></span>화면 이탈 2명<span>10:44</span></div></div>
+              </div></div>
+        </figure>
+      </article>
     </div>
   </section>
 
@@ -134,38 +154,14 @@
     <div class="container">
       <header class="sh">
         <p class="eyebrow" lang="en">3 products</p>
-        <h2 id="products-title">평가 단계의 제품</h2>
+        <h2 id="products-title">평가 단계의 모든 제품</h2>
         <p>필요한 것만 골라 쓰고, 함께 쓰면 데이터가 이어집니다.</p>
       </header>
-      <div class="pfeats">
-        <article class="pfeat" id="product-xn-quiz" data-area="assess">
-          <div class="pfeat__body">
-            <div class="pfeat__top"><span class="p-icon" aria-hidden="true">XQ</span><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div>
-            <h3 class="pfeat__name">XN Quiz</h3>
-            <p class="pfeat__desc">강의자료 기반 AI 문항 생성부터 배포·응시·자동 채점까지.</p>
-            <ul class="p-tags" role="list"><li>강의자료 기반 AI 문항 생성</li><li>검토·승인 → 배포·응시·자동 채점</li><li>LMS 성적 연계</li></ul>
-          </div>
-          <figure class="pfeat__visual" role="img" aria-label="XN Quiz 예시: AI가 만든 문항과 보기, 정답 표시."><div aria-hidden="true"><div class="ui-card ui-quiz" data-quiz>
-            <div class="ui-card__head"><span class="dot dot--assess"></span>XN Quiz<small>검토 대기</small></div>
-            후입선출(LIFO) 구조는?
-            <div class="ui-quiz__opt">큐<span>A</span></div>
-            <div class="ui-quiz__opt is-hit" data-correct>스택<span>B</span></div>
-            <div class="ui-quiz__opt">힙<span>C</span></div>
-          </div></div></figure>
-        </article>
-      </div>
-      <div class="prows">
-        <article class="prow" id="product-trustlock" data-area="assess">
-          <div class="prow__head"><span class="p-icon" aria-hidden="true">TR</span><div><h3 class="prow__name">TrustLock AI Proctoring</h3><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div></div>
-          <p class="prow__desc">온라인 시험 감독, 이상 행동 탐지로 부정행위 방지.</p>
-          <ul class="p-tags" role="list"><li>온라인 시험 감독</li><li>이상 행동 탐지</li></ul>
-        </article>
-        <article class="prow" id="product-gradeflow" data-area="assess">
-          <div class="prow__head"><span class="p-icon" aria-hidden="true">GF</span><div><h3 class="prow__name">GradeFlow</h3><ul class="badges" role="list"><li class="badge badge--pilot">시범운영</li><li class="badge badge--ai">AI</li></ul></div></div>
-          <p class="prow__desc">서술형·풀이형 과제 AI 예비 채점과 피드백.</p>
-          <ul class="p-tags" role="list"><li>루브릭 설계</li><li>AI 예비 채점·피드백</li><li>교수자 수정·승인</li></ul>
-        </article>
-      </div>
+        <ul class="ptiles" role="list">
+          <li class="ptile" id="product-xn-quiz" data-area="assess"><span class="p-icon" aria-hidden="true">XQ</span><div><div class="ptile__head"><h3 class="ptile__name">XN Quiz</h3><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div><p class="ptile__desc">강의자료 기반 AI 문항 생성부터 배포·응시·자동 채점까지.</p></div></li>
+          <li class="ptile" id="product-trustlock" data-area="assess"><span class="p-icon" aria-hidden="true">TR</span><div><div class="ptile__head"><h3 class="ptile__name">TrustLock AI Proctoring</h3><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div><p class="ptile__desc">온라인 시험 감독, 이상 행동 탐지로 부정행위 방지.</p></div></li>
+          <li class="ptile" id="product-gradeflow" data-area="assess"><span class="p-icon" aria-hidden="true">GF</span><div><div class="ptile__head"><h3 class="ptile__name">GradeFlow</h3><ul class="badges" role="list"><li class="badge badge--pilot">시범운영</li><li class="badge badge--ai">AI</li></ul></div><p class="ptile__desc">서술형·풀이형 과제 AI 예비 채점과 피드백.</p></div></li>
+        </ul>
       <p class="example-note example-note--right">화면은 이해를 돕기 위한 예시입니다.</p>
 
       <a class="next-step" href="campus.html" data-area="campus">

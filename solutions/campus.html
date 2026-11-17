@@ -96,42 +96,60 @@
     </section>
   </div>
 
-
-  <section class="section" aria-labelledby="scenes-title">
-    <div class="container">
-      <header class="sh"><p class="eyebrow" lang="en">In action</p><h2 id="scenes-title">운영은 이렇게</h2></header>
-      <div class="bento scenes">
-        <div class="bento__row bento__row--a">
-          <article class="bento-card bento-card--dark on-dark" data-area="campus">
-            <p class="bento-card__tag">교수자 AI 대시보드</p>
-            <h3>관심 학생을 먼저</h3>
-            <p>학습 현황과 관심 학생 후보군, 학습 취약 영역을 한눈에 봅니다.</p>
-            <figure class="bento-card__viz" role="img" aria-label="교수자 대시보드 예시: 42명 중 진도 31%, 44%인 학생 2명이 관심 학생으로 표시됩니다.">
-              <div aria-hidden="true"><div class="ui-card ui-dashboard">
+  <section class="section spots-section" aria-label="핵심 제품">
+    <div class="container spots">
+      <article class="spot" data-area="campus" aria-labelledby="spot-1">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">01</span><span class="spot__name">AI Campus</span></p>
+          <h2 id="spot-1" class="spot__title">학칙과 규정을 근거로 답하는 AI</h2>
+          <p class="spot__desc">대학의 시스템과 지식을 연결해 학사·행정 업무와 학생 문의를 돕는 AI.</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>학칙·학사·부서 문서 기반</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>자연어 질의응답 (RAG)</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>근거 조항 표시</span></li></ul>
+        </div>
+        <figure class="spot__visual" role="img" aria-label="AI Campus 예시: 휴학 중 장학금 신청 가능 여부를 묻자 학칙과 장학금 지급 규정을 근거로 답합니다.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-ask">
+            <div class="ui-card__head"><span class="dot dot--campus"></span>AI Campus</div>
+            <div class="ui-ask__q">휴학 중에도 장학금 신청이 가능한가요?</div>
+            <p class="ui-ask__a">휴학생은 교내 장학금 대상에서 제외됩니다. 복학 예정 학기 장학금은 복학 신청 후 신청할 수 있습니다.</p>
+            <div class="ui-pills" style="margin-top:12px"><span>학칙 제42조</span><span>장학금 지급 규정 제7조</span></div>
+          </div></div>
+        </figure>
+      </article>
+      <article class="spot" data-area="campus" aria-labelledby="spot-2">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">02</span><span class="spot__name">교수자 AI 대시보드</span></p>
+          <h2 id="spot-2" class="spot__title">도움이 필요한 학생을 먼저</h2>
+          <p class="spot__desc">학습 현황·관심 학생 후보군·학습 취약 영역 인사이트.</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>학습 현황</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>관심 학생 후보군</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>학습 취약 영역 인사이트</span></li></ul>
+        </div>
+        <figure class="spot__visual" role="img" aria-label="교수자 대시보드 예시: 42명 중 진도 31%, 44%인 학생 2명이 관심 학생으로 표시됩니다.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-dashboard">
                 <div class="ui-card__head"><span class="dot dot--campus"></span>교수자 AI 대시보드<small>데이터구조 · 42명</small></div>
                 <div class="ui-dashboard__row"><span>김서연</span><div class="ui-bar"><span style="width:92%"></span></div><span>92%</span></div>
                 <div class="ui-dashboard__row"><span>이도윤<span class="ui-flag">관심</span></span><div class="ui-bar ui-bar--warn"><span style="width:31%"></span></div><span>31%</span></div>
                 <div class="ui-dashboard__row"><span>최하은</span><div class="ui-bar"><span style="width:85%"></span></div><span>85%</span></div>
                 <div class="ui-dashboard__row"><span>정민준<span class="ui-flag">관심</span></span><div class="ui-bar ui-bar--warn"><span style="width:44%"></span></div><span>44%</span></div>
+                <div class="ui-dashboard__row"><span>한예린</span><div class="ui-bar"><span style="width:69%"></span></div><span>69%</span></div>
               </div></div>
-            </figure>
-          </article>
-          <article class="bento-card" data-area="campus">
-            <p class="bento-card__tag">LearningX AI 플랫폼</p>
-            <h3>대학이 통제하는 AI</h3>
-            <p>모델, 권한, 사용량을 학교가 직접 관리합니다.</p>
-            <figure class="bento-card__viz" role="img" aria-label="AI 플랫폼 관리 화면 예시: 승인 모델 3개, 학과별 활성화(공과대학 켜짐, 인문대학 꺼짐), 이번 달 사용량 62%.">
-              <div aria-hidden="true"><div class="ui-card ui-settings">
+        </figure>
+      </article>
+      <article class="spot" data-area="campus" aria-labelledby="spot-3">
+        <div class="spot__body">
+          <p class="spot__label"><span class="spot__num" lang="en">03</span><span class="spot__name">LearningX AI 플랫폼</span></p>
+          <h2 id="spot-3" class="spot__title">대학이 직접 통제하는 AI</h2>
+          <p class="spot__desc">모든 AI 서비스의 공통 기반.</p>
+          <ul class="spot__feats" role="list"><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>모델 관리</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>권한·활성화 단위 통제</span></li><li><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8.5l3 3 7-7"/></svg><span>사용량·감사 로그, AI 투명성 고지</span></li></ul>
+        </div>
+        <figure class="spot__visual" role="img" aria-label="AI 플랫폼 관리 화면 예시: 승인 모델 3개, 학과별 활성화(공과대학 켜짐, 인문대학 꺼짐), 이번 달 사용량 62%, 감사 로그 기록 중.">
+          <div class="spot__stage" aria-hidden="true" data-inview><div class="ui-card ui-settings">
                 <div class="ui-card__head"><span class="dot"></span>AI 관리<small>관리자</small></div>
                 <div class="ui-settings__row"><span>모델 관리</span><b>승인 모델 3개</b></div>
                 <div class="ui-settings__row"><span>학과별 활성화</span><b>공과대학</b><i class="ui-switch is-on"></i></div>
                 <div class="ui-settings__row"><span></span><b>인문대학</b><i class="ui-switch"></i></div>
                 <div class="ui-settings__row"><span>사용량</span><div class="ui-bar"><span style="width:62%;background:var(--brand)"></span></div><b>62%</b></div>
+                <div class="ui-settings__row"><span>감사 로그</span><b>기록 중</b></div>
               </div></div>
-            </figure>
-          </article>
-        </div>
-      </div>
+        </figure>
+      </article>
     </div>
   </section>
 
@@ -139,42 +157,15 @@
     <div class="container">
       <header class="sh">
         <p class="eyebrow" lang="en">4 products</p>
-        <h2 id="products-title">운영 단계의 제품</h2>
+        <h2 id="products-title">운영 단계의 모든 제품</h2>
         <p>필요한 것만 골라 쓰고, 함께 쓰면 데이터가 이어집니다.</p>
       </header>
-      <div class="pfeats">
-        <article class="pfeat" id="product-ai-campus" data-area="campus">
-          <div class="pfeat__body">
-            <div class="pfeat__top"><span class="p-icon" aria-hidden="true">AC</span><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div>
-            <h3 class="pfeat__name">AI Campus</h3>
-            <p class="pfeat__desc">대학의 시스템과 지식을 연결해 학사·행정 업무와 학생 문의를 돕는 AI.</p>
-            <ul class="p-tags" role="list"><li>학칙·학사·부서 문서 기반</li><li>자연어 질의응답 (RAG)</li><li>근거 조항 표시</li></ul>
-          </div>
-          <figure class="pfeat__visual" role="img" aria-label="AI Campus 예시: 장학금 질문에 근거 조항과 함께 답합니다."><div aria-hidden="true"><div class="ui-card ui-ask">
-            <div class="ui-card__head"><span class="dot dot--campus"></span>AI Campus</div>
-            <div class="ui-ask__q">휴학 중에도 장학금 신청이 가능한가요?</div>
-            <p class="ui-ask__a">휴학생은 교내 장학금 대상에서 제외됩니다. 복학 예정 학기 장학금은 복학 신청 후 신청할 수 있습니다.</p>
-            <div class="ui-pills" style="margin-top:12px"><span>학칙 제42조</span><span>장학금 지급 규정 제7조</span></div>
-          </div></div></figure>
-        </article>
-      </div>
-      <div class="prows">
-        <article class="prow" id="product-extracurricular" data-area="campus">
-          <div class="prow__head"><span class="p-icon" aria-hidden="true">비</span><div><h3 class="prow__name">비교과/역량 시스템</h3><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li></ul></div></div>
-          <p class="prow__desc">비교과 프로그램 운영과 역량 관리, 학생 상담을 하나로 잇는 시스템.</p>
-          <ul class="p-tags" role="list"><li>비교과 프로그램 개설·운영</li><li>역량·마일리지 관리</li><li>상담 신청·기록</li></ul>
-        </article>
-        <article class="prow" id="product-learningx-ai-platform" data-area="campus">
-          <div class="prow__head"><span class="p-icon" aria-hidden="true">AP</span><div><h3 class="prow__name">LearningX AI 플랫폼</h3><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div></div>
-          <p class="prow__desc">모든 AI 서비스의 공통 기반.</p>
-          <ul class="p-tags" role="list"><li>모델 관리</li><li>권한·활성화 단위 통제</li><li>사용량·감사 로그, AI 투명성 고지</li></ul>
-        </article>
-        <article class="prow" id="product-instructor-ai-dashboard" data-area="campus">
-          <div class="prow__head"><span class="p-icon" aria-hidden="true">DB</span><div><h3 class="prow__name">교수자 AI 대시보드</h3><ul class="badges" role="list"><li class="badge badge--pilot">시범운영</li><li class="badge badge--ai">AI</li></ul></div></div>
-          <p class="prow__desc">학습 현황·관심 학생 후보군·학습 취약 영역 인사이트.</p>
-          <ul class="p-tags" role="list"><li>학습 현황</li><li>관심 학생 후보군</li><li>학습 취약 영역 인사이트</li></ul>
-        </article>
-      </div>
+        <ul class="ptiles" role="list">
+          <li class="ptile" id="product-ai-campus" data-area="campus"><span class="p-icon" aria-hidden="true">AC</span><div><div class="ptile__head"><h3 class="ptile__name">AI Campus</h3><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div><p class="ptile__desc">대학의 시스템과 지식을 연결해 학사·행정 업무와 학생 문의를 돕는 AI.</p></div></li>
+          <li class="ptile" id="product-extracurricular" data-area="campus"><span class="p-icon" aria-hidden="true">비</span><div><div class="ptile__head"><h3 class="ptile__name">비교과/역량 시스템</h3><ul class="badges" role="list"><li class="badge badge--pilot">개발 중</li></ul></div><p class="ptile__desc">비교과 프로그램 운영과 역량 관리, 학생 상담을 하나로 잇는 시스템.</p></div></li>
+          <li class="ptile" id="product-learningx-ai-platform" data-area="campus"><span class="p-icon" aria-hidden="true">AP</span><div><div class="ptile__head"><h3 class="ptile__name">LearningX AI 플랫폼</h3><ul class="badges" role="list"><li class="badge badge--ai">AI</li></ul></div><p class="ptile__desc">모든 AI 서비스의 공통 기반.</p></div></li>
+          <li class="ptile" id="product-instructor-ai-dashboard" data-area="campus"><span class="p-icon" aria-hidden="true">DB</span><div><div class="ptile__head"><h3 class="ptile__name">교수자 AI 대시보드</h3><ul class="badges" role="list"><li class="badge badge--pilot">시범운영</li><li class="badge badge--ai">AI</li></ul></div><p class="ptile__desc">학습 현황·관심 학생 후보군·학습 취약 영역 인사이트.</p></div></li>
+        </ul>
       <p class="example-note example-note--right">화면은 이해를 돕기 위한 예시입니다.</p>
 
       <a class="next-step" href="teach.html" data-area="teach">
