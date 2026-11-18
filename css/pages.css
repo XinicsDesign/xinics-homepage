@@ -1205,7 +1205,7 @@
 .trait + .trait { border-top: 1px solid var(--line); }
 
 .trait__num {
-  color: var(--area-color);
+  color: var(--area-dark);
   font-family: var(--font-en);
   font-size: 1.75rem;
   font-weight: 500;
@@ -1665,7 +1665,7 @@
 
 .way__num {
   grid-row: span 2;
-  color: var(--area-color);
+  color: var(--area-dark);
   font-family: var(--font-en);
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 500;
@@ -2368,3 +2368,11 @@ html.js .spot__stage:not(.is-inview) .ui-card { opacity: 0; transform: translate
 .spot__visual { grid-template-columns: minmax(0, 1fr); }
 .spot__stage { min-width: 0; justify-self: center; }
 .ui-wave--light { overflow: hidden; }
+
+/* 카카오맵이 그리는 확대·축소·초기화 버튼과 링크에도 포커스 윤곽선 */
+/* 카카오 CSS가 나중에 로드되며 outline 을 지우므로 !important 로 우선 */
+.location__kakao button:focus-visible,
+.location__kakao a:focus-visible {
+  outline: 2px solid var(--brand) !important;
+  outline-offset: 2px !important;
+}
