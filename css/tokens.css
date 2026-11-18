@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Design Tokens — v0.2 (docs/design-reference.html 기준)
+   하드코딩 금지 — 항상 변수로 참조. 색은 이 파일에서만 바꾼다.
+   로고 색 확정 시 --ink · --brand 만 맞춘다.
+   대비값은 흰 배경(#FFF) 기준, 다른 배경이면 표기.
+   ========================================================================== */
+
+:root {
+  /* 텍스트·면 */
+  --ink:#0B0D17;   --ink-2:#2A2E3F;   /* ink-2 흰 배경 13.5:1 */
+  --sub:#5E6479;   /* 흰 배경 5.9:1, --bg-2 위 5.5:1 */
+  --mute:#676D83;  /* 흰 배경 5.1:1, #F7F8FA 위 4.8:1 — 텍스트 최소 기준 */
+  --deco:#C9CDD8;  /* 장식 전용. 텍스트 금지 */
+  --line:#ECEDF2;  --line-2:#E2E4EC;
+  --bg:#FFFFFF;    --bg-2:#F7F8FA;
+  --bg-3:#EEF0F4;  /* 진도 막대 트랙·플레이스홀더 선. --sub 위 5.2:1 */
+
+  /* 다크 섹션 */
+  --night:#060A22; --night-2:#0E1436; --night-sub:#9AA1C7; /* night 위 7.7:1, night-2 위 7.1:1 */
+  --night-panel:#0C1130;   /* 히어로 패널 면. --night-sub 위 7:1 */
+  --night-line:rgba(255,255,255,.14);
+  --night-text:#EEF0FF;    /* night 위 17:1 */
+  --night-chip:#C9CEF0;    /* night 위 12.6:1 */
+
+  /* 브랜드 */
+  --brand:#2F5BFF;      /* 흰 글자 5.2:1 — 버튼·링크·포커스 */
+  --brand-soft:#EEF2FF; /* --brand 글자 4.6:1 */
+
+  /* 영역 컬러 — 점·선·아이콘 전용 (텍스트·흰 글자 배경 금지) */
+  --teach:#2F6BFF; --learn:#10A88E; --assess:#7C5CFF; --campus:#F2722B;
+
+  /* 영역 컬러 진한 톤 — 컬러 블록(흰 글자) 전용 */
+  --teach-d:#1E4FD8;   /* 6.6:1 */
+  --learn-d:#0A7564;   /* 5.6:1 */
+  --assess-d:#5B3BD1;  /* 7.0:1 */
+  --campus-d:#A84A12;  /* 5.8:1 */
+  --brand-d:#1C2A6B;   /* 13.2:1 — Services·Customers 타이틀 */
+  /* Company 계열 타이틀은 --ink (19.4:1) */
+
+  /* 예시 UI 카드 보조 면·글자 (v0.2 추가) */
+  --learn-soft:#EBFBF7;   /* --learn-d 글자 5.0:1 */
+  --campus-soft:#FFF1E6;  /* --campus-text 글자 4.7:1, --campus-d 5.6:1 */
+  --campus-text:#C2410C;  /* 흰 배경 5.2:1 — "관심"·"마감" 라벨 */
+  --campus-line:#FBD3B8;  /* 경고 행 테두리(장식) */
+  --campus-bg:#FFF7F1;    /* 경고 행 면 */
+  --live:#FF6B6B;         /* ink 위 7.0:1 — 다크 자막 박스 LIVE 표시 전용 */
+  --caption-sub:#9AA0B4;  /* ink 위 7.4:1 */
+  --line7:#747F00;        /* 서울 지하철 7호선 색 — 장식(테두리) 전용, 흰 배경 4.4:1 */
+  --dot-grid:#D9DDEA;     /* 스테이지 배경 점 (장식) */
+
+  /* 다크·컬러 면 위 반투명 흰색 (면·선·장식 전용) */
+  --w-04:rgba(255,255,255,.04); --w-08:rgba(255,255,255,.08); --w-10:rgba(255,255,255,.10);
+  --w-14:rgba(255,255,255,.14); --w-24:rgba(255,255,255,.24); --w-40:rgba(255,255,255,.40);
+  --brand-glow:0 10px 30px -10px rgba(47,91,255,.9);   /* 브랜드 버튼 그림자 */
+  --brand-tint:rgba(47,91,255,.14); --brand-tint-line:rgba(47,91,255,.35); /* 다크 패널 답변 말풍선 */
+
+  /* 히어로 강조 텍스트 그라데이션 (night 위 최소 9.4:1) */
+  --glow-1:#9DB8FF; --glow-2:#6EE7D2; --glow-3:#C4B5FD; --glow-4:#FFB98F;
+
+  /* 타이포 */
+  --font-sans:"Pretendard", system-ui, -apple-system, "Apple SD Gothic Neo", sans-serif;
+  --font-en:"Montserrat", var(--font-sans); /* 영문 디스플레이(워드마크·라벨·영문 제목) 전용 */
+  --fs-hero:  clamp(2.5rem, 5.6vw, 4.5rem);  /* 홈 h1 */
+  --fs-title: clamp(2.75rem, 6vw, 5.25rem);  /* 서브페이지 타이틀 블록 h1 */
+  --fs-h2:    clamp(2rem, 4vw, 3.25rem);
+  --fs-h3:    1.375rem;
+  --fs-lead:  1.125rem;
+  --fs-body:  1rem;
+  --fs-small: .875rem;
+  --tracking-tight: -.045em;  /* hero/title */
+  --tracking-head:  -.035em;  /* h2/h3 */
+
+  /* 레이아웃 */
+  --container:1200px; --gutter:clamp(20px,4vw,32px);
+  --section-y:clamp(96px,11vw,150px);
+  --r-sm:12px; --r-md:18px; --r-lg:28px; --r-xl:40px; /* xl = 타이틀 블록 */
+  --shadow:0 1px 1px rgba(11,13,23,.03),0 8px 24px -8px rgba(11,13,23,.10),0 40px 80px -40px rgba(11,13,23,.22);
+  --shadow-ui:0 24px 50px -24px rgba(11,13,23,.28);   /* 예시 UI 카드 */
+  --shadow-hover:0 30px 60px -30px rgba(11,13,23,.25); /* 카드 hover */
+  --shadow-phone:0 30px 50px -20px rgba(11,13,23,.35);  /* 폰 목업 */
+  --shadow-rise:0 -20px 60px -20px rgba(0,0,0,.25);     /* 타이틀 블록 하단에서 올라오는 카드 */
+  --shadow-panel:0 40px 80px -30px rgba(0,0,0,.6);      /* 히어로 패널 */
+  --header-glass:rgba(255,255,255,.86);                 /* 라이트 헤더 면 (블러 위) */
+  --night-vignette:rgba(6,10,34,.85);                   /* 히어로 텍스트 쪽 어둡게 */
+
+  /* 모션 */
+  --ease:cubic-bezier(.22,1,.36,1);
+  --dur-fast:200ms; --dur-base:400ms; --dur-slow:900ms;
+  --stagger:80ms;         /* 순차 등장 간격 (M2) */
+  --dur-tab:6s;           /* 탭 자동 진행 (M7) */
+  --dur-marquee:50s;      /* 로고 마퀴 (M9) */
+  --dur-pulse:7s;         /* 타이틀 블록 원형 펄스 (M10) */
+
+  /* 구조 */
+  --header-h:68px;
+  --z-header:100;
+}

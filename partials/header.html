@@ -1,0 +1,44 @@
+<a class="skip" href="#main">본문 바로가기</a>
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="site-logo" href="{{root}}">
+      <img class="site-logo__img" src="{{root}}assets/logos/xinics.svg" alt="Xinics 홈" width="101" height="28">
+      <img class="site-logo__img site-logo__img--white" src="{{root}}assets/logos/xinics-white.svg" alt="Xinics 홈" width="101" height="28">
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="주 메뉴">
+      <ul class="nav-list" role="list">
+        <li class="nav-item has-sub{{current:solutions/}}">
+          <button class="nav-link nav-link--parent" type="button" aria-expanded="false" aria-controls="nav-sub-solutions" data-sub-toggle>Solutions</button>
+          <ul class="nav-sub" id="nav-sub-solutions" role="list">
+            <li><a class="nav-sub__link" href="{{root}}solutions/teach.html"><span class="dot dot--teach" aria-hidden="true"></span><span class="nav-sub__name">Teach</span><span class="nav-sub__desc">수업 설계·콘텐츠 제작</span></a></li>
+            <li><a class="nav-sub__link" href="{{root}}solutions/learn.html"><span class="dot dot--learn" aria-hidden="true"></span><span class="nav-sub__name">Learn</span><span class="nav-sub__desc">학습 경험</span></a></li>
+            <li><a class="nav-sub__link" href="{{root}}solutions/assess.html"><span class="dot dot--assess" aria-hidden="true"></span><span class="nav-sub__name">Assess</span><span class="nav-sub__desc">평가</span></a></li>
+            <li><a class="nav-sub__link" href="{{root}}solutions/campus.html"><span class="dot dot--campus" aria-hidden="true"></span><span class="nav-sub__name">Campus</span><span class="nav-sub__desc">운영·분석</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{root}}services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{root}}customers.html">Customers</a></li>
+        <li class="nav-item has-sub{{current:company/}}">
+          <button class="nav-link nav-link--parent" type="button" aria-expanded="false" aria-controls="nav-sub-company" data-sub-toggle>Company</button>
+          <ul class="nav-sub" id="nav-sub-company" role="list">
+            <li><a class="nav-sub__link" href="{{root}}company/about.html"><span class="nav-sub__name">About</span><span class="nav-sub__desc">회사 소개·조직</span></a></li>
+            <li><a class="nav-sub__link" href="{{root}}company/culture.html"><span class="nav-sub__name">Culture</span><span class="nav-sub__desc">일하는 방식·복지</span></a></li>
+            <li><a class="nav-sub__link" href="{{root}}company/recruit.html"><span class="nav-sub__name">Recruit</span><span class="nav-sub__desc">채용 안내·FAQ</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{root}}contact.html">Contact</a></li>
+      </ul>
+      <!-- 모바일 메뉴 패널 하단 연락처 -->
+      <p class="site-nav__foot">
+        <a href="tel:+8228658801">02-865-8801</a>
+        <a href="mailto:contact@xinics.com">contact@xinics.com</a>
+      </p>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="sr-only" data-nav-toggle-label>메뉴 열기</span>
+    </button>
+  </div>
+</header>

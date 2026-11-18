@@ -1,0 +1,254 @@
+/* ==========================================================================
+   Base — 폰트, 리셋, 타이포, 레이아웃 기본 (v0.2)
+   값은 모두 tokens.css 변수 참조. 하드코딩 금지.
+   ========================================================================== */
+
+/* --- Pretendard subset 300/400/500/600/700/800 ------------------------------
+   scripts/subset-fonts.py 로 생성 (KS X 1001 2,350자 + 영문·기호 + 콘텐츠 사용 글자).
+   서브셋에 없는 글자는 system-ui 로 폴백된다. */
+@font-face { font-family: "Pretendard"; font-style: normal; font-weight: 300; font-display: swap; src: url("../assets/fonts/Pretendard-Light.subset.woff2") format("woff2"); }
+@font-face { font-family: "Pretendard"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/Pretendard-Regular.subset.woff2") format("woff2"); }
+@font-face { font-family: "Pretendard"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/Pretendard-Medium.subset.woff2") format("woff2"); }
+@font-face { font-family: "Pretendard"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/fonts/Pretendard-SemiBold.subset.woff2") format("woff2"); }
+@font-face { font-family: "Pretendard"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/Pretendard-Bold.subset.woff2") format("woff2"); }
+@font-face { font-family: "Pretendard"; font-style: normal; font-weight: 800; font-display: swap; src: url("../assets/fonts/Pretendard-ExtraBold.subset.woff2") format("woff2"); }
+
+/* 영문 디스플레이 — Montserrat (SIL OFL 1.1), 라틴 문자만 서브셋 */
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/Montserrat-Medium.subset.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/fonts/Montserrat-SemiBold.subset.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/Montserrat-Bold.subset.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 800; font-display: swap; src: url("../assets/fonts/Montserrat-ExtraBold.subset.woff2") format("woff2"); }
+
+/* --- Reset ---------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 16px);
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+main:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dd, figure, blockquote {
+  margin: 0;
+}
+
+/* :where() 로 명시도 0 — 컴포넌트 클래스의 padding 이 항상 이기도록 */
+:where(ul, ol)[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* --- Typography ----------------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: var(--tracking-head);
+  text-wrap: balance;
+}
+
+p, li, dd, figcaption, blockquote {
+  text-wrap: pretty;
+}
+
+/* 영문 디스플레이 텍스트 — 한글 본문 속 영문(제품명 등)은 Pretendard 유지 */
+:is(h1, h2, h3, .eyebrow, .page-title__mark, .page-title__loc, .next-step__label,
+    .domain__key, .steps__label, .eco__core, .eco__node b, .eco__node small,
+    .site-footer__bottom p)[lang="en"],
+:is(.value dt, .eyebrow) [lang="en"] {
+  font-family: var(--font-en);
+  letter-spacing: -.01em;
+}
+.page-title__mark[lang="en"] { letter-spacing: -.045em; }
+:is(h1, h2)[lang="en"] { letter-spacing: -.03em; }
+
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+.lead {
+  color: var(--sub);
+  font-size: var(--fs-lead);
+  line-height: 1.7;
+}
+
+/* 본문 안 텍스트 링크 */
+.text-link {
+  color: var(--brand);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+
+/* 숫자 지표 — 카운트업 시 폭 흔들림 방지 */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Focus: 2px 윤곽선, offset 3px. outline:none 금지 ----------------------- */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* 다크 면 위에서는 흰 윤곽선 */
+.on-dark :focus-visible {
+  outline-color: var(--bg);
+}
+
+/* --- Layout --------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-top: var(--section-y);
+}
+
+/* 서브페이지 타이틀 블록 바로 다음 섹션은 간격을 줄인다 */
+.page-title-wrap + .section {
+  padding-top: clamp(48px, 5vw, 72px);
+}
+
+/* 페이지 마지막 섹션 아래 여백 (CTA 블록이 없는 페이지) */
+.section--end {
+  padding-bottom: var(--section-y);
+}
+
+/* --- Utilities ------------------------------------------------------------ */
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 본문 바로가기 — 모든 페이지 첫 요소, 포커스 시 보임 */
+.skip {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  z-index: calc(var(--z-header) + 10);
+  padding: 12px 18px;
+  border-radius: var(--r-sm);
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip:focus {
+  transform: none;
+}
+
+/* --- Motion: 전역 정지 / 화면 밖 / 동작 줄이기 ----------------------------- */
+/* 무한 루프 CSS 애니메이션은 JS 가 있을 때만 (정지 버튼이 JS 로 동작하므로) */
+html.motion-paused *,
+html.motion-paused *::before,
+html.motion-paused *::after,
+.is-paused *,
+.is-paused *::before,
+.is-paused *::after,
+.is-offscreen,
+.is-offscreen *,
+.is-offscreen *::before,
+.is-offscreen *::after {
+  animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 넓은 화면에서만 쓰는 줄바꿈. 좁은 화면은 text-wrap: balance 에 맡긴다 */
+@media (max-width: 767.98px) {
+  br.br-md { display: none; }
+}
