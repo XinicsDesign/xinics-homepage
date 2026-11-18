@@ -2769,3 +2769,93 @@ html.js .tabs.is-ready .tab-panel {
 @media (max-width: 1023.98px) {
   .page-title--solution { padding-bottom: 28px; }
 }
+
+/* 학과별 활성화처럼 한 설정이 여러 줄로 이어질 때: 사이 구분선 없음 */
+.ui-settings__row--cont { padding-top: 2px; border-top: 0; }
+
+/* 타이틀 카드 공통: 라벨 · 막대 · 값 한 줄 */
+.ui-rate {
+  display: grid;
+  grid-template-columns: 5.5em minmax(0, 1fr) 2.6em;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+}
+
+.ui-rate > span { display: flex; align-items: center; gap: 6px; color: var(--sub); white-space: nowrap; }
+.ui-rate > b { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.ui-rate .ui-bar span { background: var(--area-color, var(--brand)); }
+.ui-rate .ui-bar--warn span { background: var(--campus); }
+
+/* 요약 숫자 3칸 */
+.ui-kv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.ui-kv > div { padding: 10px 12px; border-radius: 10px; background: var(--bg-2); }
+.ui-kv small { display: block; color: var(--sub); font-size: .6875rem; }
+.ui-kv b { font-size: .9375rem; font-weight: 700; }
+
+/* InteractFlow: 차시 단계 */
+.ui-steps {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0 14px;
+}
+
+.ui-steps li {
+  position: relative;
+  display: grid;
+  flex: 1;
+  justify-items: center;
+  gap: 6px;
+  color: var(--sub);
+  font-size: .71875rem;
+  font-weight: 600;
+}
+
+.ui-steps li::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -50%;
+  width: 100%;
+  height: 2px;
+  background: var(--line-2);
+}
+
+.ui-steps li:first-child::before { display: none; }
+.ui-steps li.is-done::before,
+.ui-steps li.is-now::before { background: var(--teach); }
+
+.ui-steps i {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--line-2);
+  border-radius: 50%;
+  background: var(--bg);
+}
+
+.ui-steps .is-done i { border-color: var(--teach); background: var(--teach); color: var(--bg); }
+.ui-steps .is-now i { border-color: var(--teach); box-shadow: inset 0 0 0 4px var(--bg), inset 0 0 0 12px var(--teach); }
+.ui-steps .is-now { color: var(--ink); }
+
+.ui-iflow__now {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--brand-soft);
+}
+
+.ui-iflow__now span { color: var(--sub); text-align: right; }
+.ui-iflow__now .ui-bar { grid-column: 1 / -1; background: var(--bg); }
+.ui-iflow__now .ui-bar span { background: var(--teach); }
