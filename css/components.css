@@ -2675,3 +2675,97 @@ html.js .bento-card .ui-live::before {
   .stage { padding-bottom: 0; }
   .stage-area { padding-bottom: 28px; }
 }
+
+/* ==========================================================================
+   전체 검토 보정 (2026-11-18)
+   ========================================================================== */
+
+/* 홈 벤토 둘째 줄: 카드 3개 (TrustLock · AI 플랫폼 · LearningHUB) */
+@media (min-width: 980px) {
+  .bento__row--b > :last-child { grid-column: 1 / -1; }
+}
+
+@media (min-width: 1100px) {
+  .bento__row--b { grid-template-columns: 4fr 5fr 4fr; }
+  .bento__row--b > :last-child { grid-column: auto; }
+}
+
+/* LearningHUB 예시: 오늘 할 일 */
+.ui-hub__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  padding: 9px 12px;
+  border: 1px solid var(--line-2);
+  border-radius: 10px;
+  background: var(--bg-2);
+  color: var(--sub);
+}
+
+.ui-hub__search svg { flex: none; color: var(--learn-d); }
+
+.ui-hub__row {
+  display: grid;
+  grid-template-columns: 4.5em minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+}
+
+.ui-hub__row:nth-of-type(2) { border-top: 0; }
+.ui-hub__row > span { color: var(--sub); }
+.ui-hub__row b { overflow: hidden; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.ui-hub__row .ui-bar { width: 56px; }
+
+.ui-hub__row em {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--bg-2);
+  color: var(--sub);
+  font-size: .6875rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.ui-hub__row em.is-warn { background: var(--campus-soft); color: var(--campus-d); }
+
+/* 4단계 탭 스테이지: 패널을 같은 칸에 겹쳐 가장 큰 패널 높이에 맞춤 (모바일에서 잘림 방지) */
+html.js .tabs.is-ready .tabs__stage { display: grid; }
+
+html.js .tabs.is-ready .tab-panel {
+  position: relative;
+  inset: auto;
+  grid-area: 1 / 1;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 980px) {
+  html.js .tabs.is-ready .tab-panel { padding-bottom: 40px; }
+}
+
+/* 홈 고객 밴드 — JS 없음·동작 줄이기: 움직일 때처럼 두 줄로 (전체는 고객사 페이지) */
+.customers-band .marquee:not(.is-animated) .marquee__viewport {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent);
+  mask-image: linear-gradient(90deg, #000 85%, transparent);
+}
+
+.customers-band .marquee:not(.is-animated) .marquee__track { flex-wrap: nowrap; }
+
+/* 고객사 로고 격자: 칸이 로고 폭보다 좁아질 수 있게 (360px 넘침 방지) */
+.logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 768px) { .logo-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .logo-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.logo-grid .logo-img { max-width: min(140px, 100%); height: auto; }
+
+/* 다음 페이지 카드: 모바일에서 원 장식을 작은 라벨 뒤에서 오른쪽 아래로 (대비 4.5:1 확보) */
+@media (max-width: 767.98px) {
+  .next-step__blob { right: -110px; top: auto; bottom: -130px; }
+}
+
+/* 솔루션 타이틀: 모바일에서 예시 카드가 블록 아래 모서리에 잘리지 않게 */
+@media (max-width: 1023.98px) {
+  .page-title--solution { padding-bottom: 28px; }
+}
